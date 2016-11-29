@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>添加管理员</title>
+    <meta charset="utf-8">
+    <link href="css/admin.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <style type="text/css">
+    
+    </style>
+    
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="images/2.gif" /></div>
+      <div class="nav">
+        <p>
+        <a href="index.html"><button>进入首页</button></a>&nbsp;&nbsp;
+        <a href="login.html"><button>退出登录</button></a>
+        <span>管理员：管理员姓名</span>&nbsp;&nbsp;
+        <img src="images/admin.png" />
+        </p>
+      </div>
+    </header>
+    <div class="content">
+      <div class="aside">
+        <div id="accordion">
+            <h3><a href="admin-all.html"><span class="glyphicon glyphicon-lock"></span>账户管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="admin-all.html">管理员信息</a></li>
+            <li><a href="admin-add.html">添加管理员</a></li>
+          </ul>
+          <h3><a href="project-all.html"><span class="glyphicon glyphicon-lock"></span>项目管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="project-add.html">添加项目</a></li>
+            <li><a href="project-all.html">所有项目</a></li>
+          </ul>
+          <h3><a href="product-all.html"><span class="glyphicon glyphicon-lock"></span>产品管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="product-add.html">添加产品</a></li>
+            <li><a href="product-all.html">所有产品</a></li>
+          </ul>
+          <h3><a href="case-all.html"><span class="glyphicon glyphicon-lock"></span>案例管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="case-add.html">添加案例</a></li>
+            <li><a href="case-all.html">所有案例</a></li>
+          </ul>
+          <h3><a href="user-feedback.html"><span class="glyphicon glyphicon-lock"></span>用户管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="user-feedback.html">用户评论</a></li>
+            <li><a href="user-order.html">用户预约</a></li>
+            <li><a href="user-consult.html">用户咨询</a></li>
+          </ul>
+          <h3><a href="notice-all.html"><span class="glyphicon glyphicon-lock"></span>通知管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="notice-add.html">发布通知</a></li>
+            <li><a href="notice-all.html">所有通知</a></li>
+          </ul>
+          <h3><a href="label.html"><span class="glyphicon glyphicon-lock"></span>标签/关键字管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="label.html">标签管理</a></li>
+            <li><a href="keyword.html">关键字管理</a></li>
+            <li><a href="add-labelkey.html">添加</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="article">
+        <ol class="breadcrumb">
+          <li><a href="#">首页</a></li>
+          <li><a href="#">帐户管理</a></li>
+          <li class="active">添加管理员</li>
+        </ol>
+        <div class="table-responsive">
+          <h3>添加管理员 <small>User Add</small></h3>
+          <div class="list-group ">
+            <div class="list-group-item">
+              <form role="form" >
+                <div class="input-group"> <span class="input-group-addon">用&nbsp;&nbsp;户&nbsp;&nbsp;名：</span>
+                  <input type="text" class="form-control" placeholder="" >
+                </div>
+                <div class="input-group"> <span class="input-group-addon">设置密码：</span>
+                  <input type="text" class="form-control" placeholder="123456" >
+                </div>
+                <div class="input-group"> <span class="input-group-addon">确认密码：</span>
+                  <input type="text" class="form-control" placeholder="123456" >
+                </div>
+                <div class="input-group "> <span class="input-group-addon" for="inputWarning1">真实姓名：</span>
+                  <input type="text" class="form-control" placeholder="" id="input">
+                </div>
+                <div class="input-group"> <span class="input-group-addon">手机号码：</span>
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="input-group"> <span class="input-group-addon">电子邮箱：</span>
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="input-group"> <span class="input-group-addon">&nbsp;&nbsp;&nbsp;Q&nbsp;&nbsp;&nbsp;Q：&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="input-group"> <span class="input-group-addon">上传头像：</span>
+                  <span class="form-control"><button type="submit" class="btn btn-warning "> &nbsp;&nbsp;点击上传图片&nbsp;&nbsp;</button></span>
+                </div>
+                <div class="input-group"> <span class="input-group-addon">用户权限：</span>
+                  <span class="form-control"><p><input type="radio" value="产品管理">产品管理</p>
+                  <p><input type="radio" value="项目管理">项目管理</p>
+                  <p><input type="radio" value="案例管理">案例管理</p>
+                  <p><input type="radio" value="通告管理">通告管理</p>
+                  <p><input type="radio" value="标签/关键字管理">标签/关键字管理</p></span>
+                </div>
+                <div class="input-group"> <span class="input-group-addon">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</span>
+                  <textarea class="form-control" style="height:100px;"></textarea>
+                </div>
+                <div class="input-group">
+                  <button type="submit" class="btn btn-primary "> &nbsp;&nbsp;保存&nbsp;&nbsp;</button>&nbsp;&nbsp;
+                  <button type="submit" class="btn btn-primary "> &nbsp;&nbsp;重置&nbsp;&nbsp;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>版权所有：蓝金祛痘美肤堂 地址：天津市XXXX路XXXX号 邮编：300000 制作维护：B&G小组
+      <br/>津公网12010402000425</p>
+    </footer>
+    <script>
+        $("#accordion" ).accordion({
+            heightStyle: "content"
+        });
+        </script>
+  </body>
+</html>
