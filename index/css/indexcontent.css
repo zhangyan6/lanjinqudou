@@ -1,0 +1,130 @@
+* {
+  
+    -webkit-box-sizing: border-box;
+ 
+    -moz-box-sizing: border-box;
+   
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  padding-right: 15px;
+ 
+ padding-left: 15px;
+ 
+ margin-right: auto;
+ 
+ margin-left: auto;
+}
+
+
+
+/*占页面比例*/
+
+
+@media (min-width: 1200px) {
+ .container {
+    width: 1170px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6 {
+
+   float: left;
+ 
+}
+ 
+.col-md-6 {
+    width: 50%;
+  }
+ 
+.col-md-3 {
+    width: 25%;
+  }
+ 
+.col-md-2 {
+    width: 16.66666667%;
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix:before,
+
+.clearfix:after,
+
+
+.container:before,
+
+.container:after{
+  
+display: table;
+  content: " ";
+}
+
+
+
+.clearfix:after,
+
+.container:after,
+
+.btn-group-vertical {
+ 
+ clear: both;
+}
+
+
+
+
+
+
+
+/*鼠标经过图片时的效果*/
+
+
+.news-one a,.g-1 a,.g-2 a,.col-md-6 gallery-left a,g-5. col-md-6 g-3 a,
+g-5. col-md-6 g-4 a,.col-md-3 gallery-left a,.col-md-3 gallery-left.g-6 a{
+   
+}
+.news-one a:hover,
+.g-1 a:hover,
+.g-2 a:hover,
+.col-md-6 gallery-left a:hover,
+g-5. col-md-6 g-3 a:hover,
+g-5. col-md-6 g-4 a:hover,
+.col-md-3 gallery-left a:hover,
+.col-md-3 gallery-left.g-6 a:hover{
+	
+}
+
+
+
+
+
+
+
+
+
