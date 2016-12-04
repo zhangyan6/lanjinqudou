@@ -1,0 +1,176 @@
+.bg{
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+}
+.login{
+    background-image:url(../images/loginbg.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+}
+.login_title{
+    position:absolute;
+    left: 630px;
+    top: 100px;
+    margin:0px;   
+    
+    height:500px;
+    width:600px;
+    text-align:center;
+  font-family:Serif;
+  font-weight:bold;
+  font-size:40px;
+  font-style:normal;
+  font-variant:normal;
+  color:#0099FF;
+}
+.login_m{
+    position:absolute;
+    left: 630px;
+    top: 200px;
+    margin:0px;   
+    border:1px solid #bebebe; 
+    height:500px;
+    width:600px;
+    text-align:center;
+}
+.login_l{
+    position:absolute;
+    left: 100px;
+    top: 65px;
+    margin:0px;  
+   background: url(../images/login_bg.png) no-repeat; 
+    height:400px;
+    width:400px;
+   overflow:hidden;
+}
+.login_m h2{
+ color:#800000; 
+ text-transform:uppercase; 
+ font-size:16px;
+ font-weight:normal; 
+ margin-bottom:11px;
+}
+.login_m input.txt_input{
+   width:295px; 
+   height:36px;
+   border:1px solid #cad2db;
+   background:url(../images/txt_input_bg.gif) no-repeat; 
+   padding:0 5px;
+   -moz-border-radius:5px; 
+   -webkit-border-radius:5px;
+   border-radius:5px;
+   line-height:36px; 
+   margin-bottom:10px;
+   font-size:14px; 
+   color:#717171;
+   font-family:Arial;
+}
+.login_m input.txt_input2{ 
+   margin-bottom:20px;
+}
+.login_m input.txt_input:focus{
+ transition:border linear .2s,box-shadow linear .2s; 
+ -moz-transition:border linear .2s,-moz-box-shadow linear .2s;
+ -webkit-transition:border linear .2s,-webkit-box-shadow linear .2s; 
+ outline:none;border-color:rgba(173,173,173.75); 
+ box-shadow:0 0 8px rgba(173,173,173,.5);
+ -moz-box-shadow:0 0 8px rgba(173,173,173,.5);
+ -webkit-box-shadow:0 0 8px rgba(173,173,173,3);
+ border:1px solid #6192c8;
+}
+p.forgot{
+   position:absolute;
+    right: 760px;
+    top: 500px;
+ font-size:18px;
+ text-align:right;
+ margin-bottom:15px;
+ font-variant: normal;
+ font-family:"¿¬Ìå";
+ font-weight: bold;
+ font-style:italic;
+ color:#FF9966;
+}
+p.forgot a,.login_boder p.forgot a:visited{
+color:#6699FF;
+}
+p.forgot a:hover{
+color:#9999FF;
+}
+.rem_sub input.sub_button{
+  position:absolute;
+  right: 860px;
+  top: 600px;
+  margin:0px;    
+  text-align:center;
+  float:right;
+  width:122px;
+  height:32px; 
+  background:url(../images/site_bg.png) no-repeat -153px -850px;
+  border:none; 
+  color:#FFF;
+  padding-bottom:2px; 
+  font-family:Serif;
+  font-weight:bold;
+  font-size:14px;
+  font-style:normal;
+  font-variant:normal;
+}
+.rem_sub input.sub_button:hover{
+ background-position:-153px -882px;
+ cursor:pointer;
+}
+.rem_sub input.sub_buttons{ float:left; width:122px;  height:32px; background:url(site_bg.png) no-repeat -153px -850px; border:none; color:#FFF; padding-bottom:2px; font-size:14px; font-weight:bold;}
+.rem_sub input.sub_buttons:hover{ background-position:-153px -882px; cursor:pointer;}
+
+.rem_sub .rem_sub_l{
+ position:absolute;
+ left: 800px;
+ top: 510px;
+ float:left;
+ font-size:12px;
+ height:33px;
+ line-height:33px;}
+.rem_sub input#checkbox{
+ margin-right:5px;
+ vertical-align:middle;
+}
+.login_copyright{
+    position:absolute;
+    left: 730px;
+    top: 700px;
+    height:400px;
+    width:400px;
+    text-align:center;
+  font-family:Serif;
+  font-weight:bold;
+  font-size:10px;
+  font-style:normal;
+  font-variant:normal;
+  color:#9999FF;
+}
+a.login_link:link{
+  font-size:190%;
+  background:#FFFFCC;
+  font-family:'Î¢ÈíÑÅºÚ';
+  text-decoration:none;
+  color:#9999CC;
+}
+a.login_link:visited{
+  font-size:250%;
+  background:#FFFFCC;
+  font-family:'Î¢ÈíÑÅºÚ';
+  text-decoration:underline;
+  color:#6699FF;
+}
+a.login_link:hover{
+  font-size:190%;
+  background:#FFFFCC;
+  font-family:'Î¢ÈíÑÅºÚ';
+  text-decoration:none;
+  color:#9999CC;
+}
+.login_padding{ padding:28px 47px 20px 47px ;}
+.forget_model_h2{color:#4f5d80; font-size:12px; font-weight:normal; margin-bottom:11px;}

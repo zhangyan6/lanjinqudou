@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>标签管理</title>
+    <meta charset="utf-8">
+    <link href="css/admin.css" type="text/css" rel="stylesheet" />
+    <link href="css/allproduct.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <style type="text/css">
+    
+    </style>
+    
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="images/2.gif" /></div>
+      <div class="nav">
+        <p>
+        <a href="index.html"><button>进入首页</button></a>&nbsp;&nbsp;
+        <a href="login.html"><button>退出登录</button></a>
+        <span>管理员：管理员姓名</span>&nbsp;&nbsp;
+        <img src="images/admin.png" />
+        </p>
+      </div>
+    </header>
+    <div class="content">
+      <div class="aside">
+        <div id="accordion">
+            <h3><a href="admin-all.html"><span class="glyphicon glyphicon-lock"></span>账户管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="admin-all.html">管理员信息</a></li>
+            <li><a href="admin-add.html">添加管理员</a></li>
+          </ul>
+          <h3><a href="project-all.html"><span class="glyphicon glyphicon-lock"></span>项目管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="project-add.html">添加项目</a></li>
+            <li><a href="project-all.html">所有项目</a></li>
+          </ul>
+          <h3><a href="product-all.html"><span class="glyphicon glyphicon-lock"></span>产品管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="product-add.html">添加产品</a></li>
+            <li><a href="product-all.html">所有产品</a></li>
+          </ul>
+          <h3><a href="case-all.html"><span class="glyphicon glyphicon-lock"></span>案例管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="case-add.html">添加案例</a></li>
+            <li><a href="case-all.html">所有案例</a></li>
+          </ul>
+          <h3><a href="user-feedback.html"><span class="glyphicon glyphicon-lock"></span>用户管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="user-feedback.html">用户评论</a></li>
+            <li><a href="user-order.html">用户预约</a></li>
+            <li><a href="user-consult.html">用户咨询</a></li>
+          </ul>
+          <h3><a href="notice-all.html"><span class="glyphicon glyphicon-lock"></span>通知管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="notice-add.html">发布通知</a></li>
+            <li><a href="notice-all.html">所有通知</a></li>
+          </ul>
+          <h3><a href="label.html"><span class="glyphicon glyphicon-lock"></span>标签/关键字管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="label.html">标签管理</a></li>
+            <li><a href="keyword.html">关键字管理</a></li>
+            <li><a href="add-labelkey.html">添加</a></li>
+          </ul>
+        </div>
+      </div>
+     <!--/sidebar-->
+     <div class="article">
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="/jscss/admin">后台管理</a><span class="crumb-step">&gt;</span><span class="crumb-name">标签/关键字管理</span></div>
+        </div>
+        <div class="search-wrap">
+            <div class="search-content">
+                <form action="/jscss/admin/design/index" method="post">
+                    <table class="search-tab">
+                        <tr>
+                            <th width="120">选择分类:</th>
+                            <td>
+                                <select name="search-sort" id="">
+                                    <option value="">全部</option>
+                                    <option value="19">精品界面</option><option value="20">推荐界面</option>
+                                </select>
+                            </td>
+                            <th width="70">关键字:</th>
+                            <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
+                            <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="add-labelkey.html"><i class="icon-font"></i>添加标签</a>
+                        <a id="batchDel" href="javascript:void(0)"><i class="icon-font"></i>
+                        <button onclick="deleteallbutton()">批量删除</button></a>
+                        <p id="demo"></p>
+                        <script>
+                           function deleteallbutton(){
+                           var x;
+                           var r=confirm("你确定要批量删除吗？");
+                               if (r==true){
+                                 x="删除成功!";
+                              }
+                                else{
+                                 x="已取消删除!";
+                              }
+                             document.getElementById("demo").innerHTML=x;
+                            }
+                       </script>
+                        <a id="updateOrd" href="javascript:void(0)"><i class="icon-font"></i>更新排序</a>
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th>
+                            <th>排序</th>
+                            <th>ID</th>
+                            <th>标签名称</th>
+                            <th>标签编号</th>
+                            <th>备注</th>
+                            <th>发布人</th>
+                            <th>更新时间</th>
+                            
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="59" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>59</td>
+                            <td title="面霜"><a target="_blank" href="#" title="面霜">面霜</a> 
+                            </td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="59" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>59</td>
+                            <td title="水"><a target="_blank" href="#" title="水">水</a> 
+                            </td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="59" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>59</td>
+                            <td title="乳"><a target="_blank" href="#" title="乳">乳</a> 
+                            </td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="59" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>59</td>
+                            <td title="项目"><a target="_blank" href="#" title="项目">项目</a> 
+                            </td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>    
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="59" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>59</td>
+                            <td title="案例"><a target="_blank" href="#" title="案例">案例</a>
+                            </td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="58" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="58" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>58</td>
+                            <td title="青春痘"><a target="_blank" href="#" title="青春痘">青春痘</a> 
+                            </td>
+                            <td>0</td>
+                            <td>35</td>
+                            <td>admin</td>
+                            <td>2013-12-30 22:34:00</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="59" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>59</td>
+                            <td title="痤疮"><a target="_blank" href="#" title="痤疮">痤疮</a>
+                            </td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="59" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>59</td>
+                            <td title="粉刺"><a target="_blank" href="#" title="粉刺">粉刺</a> 
+                            </td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="59" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>59</td>
+                            <td title="皮炎"><a target="_blank" href="#" title="皮炎">皮炎</a>
+                            </td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="59" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>59</td>
+                            <td title="其他"><a target="_blank" href="#" title="其他">其他</a> 
+                            </td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="59" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>59</td>
+                            <td title="方案"><a target="_blank" href="#" title="方案">方案</a> 
+                            </td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="59" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>59</td>
+                            <td title="新闻通知"><a target="_blank" href="#" title="新闻通知">新闻通知</a> 
+                            </td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="59" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>59</td>
+                            <td title="理疗"><a target="_blank" href="#" title="理疗">理疗</a> 
+                            </td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="59" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>59</td>
+                            <td title="机器"><a target="_blank" href="#" title="机器">机器</a>
+                            </td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="58" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="58" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
+                            </td>
+                            <td>58</td>
+                            <td title="内调外治"><a target="_blank" href="#" title="内调外治">内调外治</a> 
+                            </td>
+                            <td>0</td>
+                            <td>35</td>
+                            <td>admin</td>
+                            <td>2013-12-30 22:34:00</td>
+                            
+                            <td>
+                                <a class="link-update" href="#">
+
+                               <button onclick="noticechange()">修改</button></a>
+<p id="demo1"></p>
+<script>
+function noticechange(){
+  var y;
+  var person1=prompt("标题","Harry Potter");
+  
+  if (person!=null && person!=""){
+      y="你好 " + person + "! 今天感觉如何?";
+      document.getElementById("demo1").innerHTML=x;
+  }
+}
+</script>
+                                <a class="link-del" href="#"><button onclick="deletebutton()">删除</button></a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    <div class="list-page"> 11 条 1/2页<a href="label.html">上一页</a></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+    <footer>
+      <p>版权所有：蓝金祛痘美肤堂 地址：天津市XXXX路XXXX号 邮编：300000 制作维护：B&G小组
+      <br/>津公网12010402000425</p>
+    </footer>
+    <script>
+        $("#accordion" ).accordion({
+            heightStyle: "content"
+        });
+        </script>
+  </body>
+</html>
