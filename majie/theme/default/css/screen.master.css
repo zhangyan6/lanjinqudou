@@ -1,0 +1,3143 @@
+@charset "UTF-8";
+/*0-640*/
+/*641-1024*/
+/*1025-1440*/
+/*1441-1580*/
+/*1581-1680*/
+/*1681-1920*/
+/*1921-*/
+/*_functions.scss*/
+/*_global.scss*/
+/*响应式兼容样式*/
+@media only screen and (min-width: 1581px) and (max-width: 1680px) {
+  /*首页*/
+  /* line 5, ../sass/_screen.scss */
+  .wrapper .landing-page {
+    height: 1050px;
+  }
+  /* line 8, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-logo {
+    top: 240px;
+  }
+  /* line 11, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-down {
+    top: 750px;
+  }
+  /* line 14, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-play {
+    top: 460px;
+  }
+  /* line 17, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-slogan {
+    top: 560px;
+  }
+  /* line 21, ../sass/_screen.scss */
+  .wrapper .home-banner {
+    height: 600px;
+  }
+  /* line 23, ../sass/_screen.scss */
+  .wrapper .home-banner .slide-wrapper {
+    height: 670px;
+  }
+  /* line 26, ../sass/_screen.scss */
+  .wrapper .home-banner .banner-tabs li a {
+    width: 240px;
+    height: 80px;
+    padding-top: 30px;
+  }
+  /* line 32, ../sass/_screen.scss */
+  .wrapper .home-banner .slick-list .slider-list {
+    height: 600px;
+  }
+  /* line 37, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list a {
+    width: 100%;
+  }
+  /* line 40, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-1 {
+    height: 600px;
+  }
+  /* line 42, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-1 .banner1-font {
+    width: 340px;
+    height: 200px;
+  }
+  /* line 46, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-1 .banner1-animate {
+    width: 700px;
+    height: 600px;
+    left: 14%;
+  }
+  /* line 54, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 {
+    height: 600px;
+  }
+  /* line 56, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 .banner2-animate {
+    width: 580px;
+    height: 600px;
+  }
+  /* line 60, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 .banner2-icon {
+    width: 230px;
+    height: 300px;
+  }
+  /* line 64, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 .banner2-font {
+    width: 550px;
+    height: 300px;
+  }
+  /* line 69, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 {
+    height: 600px;
+  }
+  /* line 71, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 .banner3-animate {
+    width: 700px;
+    height: 600px;
+    left: 12%;
+  }
+  /* line 76, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 .banner3-product {
+    width: 200px;
+    height: 150px;
+    right: 27%;
+  }
+  /* line 81, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 .banner3-font {
+    width: 380px;
+    height: 80px;
+    right: 20%;
+  }
+  /* line 87, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 {
+    height: 600px;
+  }
+  /* line 89, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 .banner4-product {
+    top: -21px;
+  }
+  /* line 92, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 .banner4-icon {
+    width: 590px;
+  }
+  /* line 95, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 .banner4-font {
+    width: 400px;
+    height: 320px;
+  }
+  /* line 103, ../sass/_screen.scss */
+  .wrapper .home-column .bigpic {
+    width: 100%;
+  }
+
+  /*走进克丽缇娜*/
+  /* line 110, ../sass/_screen.scss */
+  .about-columnList {
+    background-size: 100%;
+    height: 100%;
+    min-height: 480px;
+  }
+  /* line 114, ../sass/_screen.scss */
+  .about-columnList .intro-left {
+    top: 26%;
+  }
+  /* line 117, ../sass/_screen.scss */
+  .about-columnList .intro-right {
+    top: 26%;
+  }
+
+  /*公司简介*/
+  /* line 122, ../sass/_screen.scss */
+  .profile-wrapper {
+    height: 850px;
+    background: url(../images/about/company_profile_bg.jpg) 0px -50px no-repeat;
+  }
+  /* line 125, ../sass/_screen.scss */
+  .profile-wrapper .intro-profile {
+    right: 200px;
+  }
+  /* line 128, ../sass/_screen.scss */
+  .profile-wrapper h2 {
+    right: 360px;
+  }
+
+  /* line 132, ../sass/_screen.scss */
+  .company-size-wrapper {
+    height: 850px;
+  }
+  /* line 134, ../sass/_screen.scss */
+  .company-size-wrapper .intro-wrapper {
+    right: 200px;
+  }
+  /* line 137, ../sass/_screen.scss */
+  .company-size-wrapper .company-map {
+    background-size: 90%;
+    left: 3%;
+  }
+
+  /* line 142, ../sass/_screen.scss */
+  .develop-wrapper {
+    height: 850px;
+    background: url(../images/about/develop_bg.jpg) -150px -50px no-repeat;
+  }
+  /* line 145, ../sass/_screen.scss */
+  .develop-wrapper .intro-wrapper {
+    right: 200px;
+  }
+
+  /* line 149, ../sass/_screen.scss */
+  .education-wrapper {
+    height: 850px;
+    background: url(../images/about/education_bg.jpg) -150px -50px no-repeat;
+  }
+  /* line 152, ../sass/_screen.scss */
+  .education-wrapper .intro-wrapper {
+    right: 200px;
+  }
+
+  /*品牌故事*/
+  /* line 157, ../sass/_screen.scss */
+  .family-brand {
+    background-size: 100%;
+    height: 100%;
+    min-height: 620px;
+  }
+  /* line 161, ../sass/_screen.scss */
+  .family-brand .slogan-brand {
+    padding-top: 200px;
+  }
+  /* line 164, ../sass/_screen.scss */
+  .family-brand .down-brand {
+    bottom: 15%;
+  }
+
+  /* line 169, ../sass/_screen.scss */
+  .spirit-brand .spirit-brand-left {
+    left: 15%;
+  }
+
+  /* line 174, ../sass/_screen.scss */
+  .video-brand {
+    height: 759px;
+  }
+  /* line 176, ../sass/_screen.scss */
+  .video-brand .video-content {
+    background-size: 100%;
+    *background-position: -200px 0px;
+  }
+  /* line 180, ../sass/_screen.scss */
+  .video-brand .video-content .video-title {
+    width: 400;
+    height: 390px;
+  }
+
+  /* line 185, ../sass/_screen.scss */
+  .spirit-brand .video {
+    left: 23%;
+  }
+
+  /*里程碑*/
+  /* line 190, ../sass/_screen.scss */
+  .milestone .milestone-1989 {
+    background-size: 100%;
+    height: 100%;
+    min-height: 620px;
+  }
+  /* line 195, ../sass/_screen.scss */
+  .milestone .text-1989 {
+    top: 220px;
+  }
+  /* line 201, ../sass/_screen.scss */
+  .milestone .milestone-2014 .text-2014 {
+    left: 8%;
+  }
+
+  /*企业荣誉*/
+  /* line 207, ../sass/_screen.scss */
+  .honor-content {
+    padding-top: 150px;
+  }
+
+  /*居家护理*/
+  /* line 211, ../sass/_screen.scss */
+  .hg-content .hg-nav {
+    width: 1240px;
+  }
+
+  /* line 214, ../sass/_screen.scss */
+  .fantasia-banner, .sunscreen-banner, .whitening-banner, .skincare-banner, .acne-banner, .oil-banner {
+    background-position: 0px -70px;
+  }
+
+  /* line 217, ../sass/_screen.scss */
+  .hg-content .hg-banner {
+    background-size: 100%;
+    height: 100%;
+    min-height: 600px;
+  }
+  /* line 221, ../sass/_screen.scss */
+  .hg-content .hg-banner .pro-slogan {
+    top: 35%;
+    left: 140px !important;
+  }
+  /* line 225, ../sass/_screen.scss */
+  .hg-content .hg-banner .down-btn {
+    bottom: 15%;
+  }
+
+  /* line 230, ../sass/_screen.scss */
+  .product-detail-content {
+    height: 740px;
+  }
+
+  /* line 234, ../sass/_screen.scss */
+  .product-slide-wrapper .slider-arrow .left-arrow {
+    left: -40%;
+  }
+  /* line 237, ../sass/_screen.scss */
+  .product-slide-wrapper .slider-arrow .right-arrow {
+    right: -40%;
+  }
+
+  /*专业护理*/
+  /* line 243, ../sass/_screen.scss */
+  .spa-content .courses-list {
+    background-size: 100%;
+    height: 100%;
+    min-height: 480px;
+  }
+  /* line 248, ../sass/_screen.scss */
+  .spa-content .courses-list .title-en {
+    font-size: 42px;
+  }
+  /* line 251, ../sass/_screen.scss */
+  .spa-content .title-ch {
+    font-size: 36px;
+    margin-top: 0px;
+  }
+  /* line 255, ../sass/_screen.scss */
+  .spa-content .content {
+    top: 90px;
+  }
+  /* line 258, ../sass/_screen.scss */
+  .spa-content .content-right {
+    top: 100px;
+  }
+  /* line 261, ../sass/_screen.scss */
+  .spa-content .product {
+    margin-top: 30px;
+  }
+  /* line 264, ../sass/_screen.scss */
+  .spa-content .pro-banner {
+    background-size: 100%;
+    height: 100%;
+    min-height: 600px;
+  }
+  /* line 269, ../sass/_screen.scss */
+  .spa-content .pro-banner .pro-slogan {
+    top: 35%;
+  }
+  /* line 272, ../sass/_screen.scss */
+  .spa-content .pro-banner .down-btn {
+    bottom: 15%;
+  }
+
+  /*肌肤顾问*/
+  /* line 278, ../sass/_screen.scss */
+  .question-content {
+    height: 780px;
+  }
+  /* line 280, ../sass/_screen.scss */
+  .question-content .book {
+    top: 350px;
+  }
+  /* line 283, ../sass/_screen.scss */
+  .question-content .cosmetic {
+    height: 270px;
+    overflow: hidden;
+  }
+  /* line 287, ../sass/_screen.scss */
+  .question-content .cosmetic img {
+    width: 75%;
+  }
+  /* line 290, ../sass/_screen.scss */
+  .question-content .cosmetic2 {
+    bottom: -75px;
+  }
+  /* line 293, ../sass/_screen.scss */
+  .question-content .cosmetic2 img {
+    width: 80%;
+  }
+  /* line 296, ../sass/_screen.scss */
+  .question-content .book-corner {
+    top: -50px;
+  }
+  /* line 299, ../sass/_screen.scss */
+  .question-content .model {
+    height: 780px;
+    right: -130px;
+    overflow: hidden;
+  }
+  /* line 304, ../sass/_screen.scss */
+  .question-content .model img {
+    width: 90%;
+  }
+  /* line 307, ../sass/_screen.scss */
+  .question-content .photo img {
+    width: 30%;
+  }
+  /* line 310, ../sass/_screen.scss */
+  .question-content .form-slide {
+    top: 200px;
+  }
+
+  /* line 314, ../sass/_screen.scss */
+  .question-end {
+    top: 165px;
+  }
+
+  /*snow*/
+  /* line 320, ../sass/_screen.scss */
+  .snow-main .snow-content {
+    background-position: -100px 0;
+  }
+  /* line 322, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-banner img {
+    width: 1680px;
+  }
+  /* line 325, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font0 {
+    top: 47%;
+    right: 18%;
+    width: 460px;
+    height: 300px;
+  }
+  /* line 331, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font1, .snow-main .snow-content .snow-font2 {
+    left: 15%;
+  }
+  /* line 334, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font3 {
+    top: 69%;
+    right: 16%;
+    width: 490px;
+  }
+
+  /* line 342, ../sass/_screen.scss */
+  .ideas-content {
+    width: 100%;
+    background-size: 100%;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/spa/product_ideas.jpg', sizingMethod='scale');
+    height: 700px;
+  }
+  /* line 349, ../sass/_screen.scss */
+  .ideas-content .ideas-title {
+    top: 20%;
+    left: 13%;
+    width: 550px;
+    height: 270px;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1580px) {
+  /* line 360, ../sass/_screen.scss */
+  .wrapper {
+    /*走进克丽缇娜*/
+    /*公司简介*/
+    /*居家护理*/
+    /*专业护理*/
+    /*品牌故事*/
+  }
+  /* line 361, ../sass/_screen.scss */
+  .wrapper .landing-page {
+    height: 1050px;
+  }
+  /* line 363, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-logo {
+    top: 240px;
+  }
+  /* line 366, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-down {
+    top: 750px;
+  }
+  /* line 369, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-play {
+    top: 460px;
+  }
+  /* line 372, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-slogan {
+    top: 560px;
+  }
+  /* line 376, ../sass/_screen.scss */
+  .wrapper .home-banner {
+    height: 600px;
+  }
+  /* line 378, ../sass/_screen.scss */
+  .wrapper .home-banner .slide-wrapper {
+    height: 600px;
+  }
+  /* line 381, ../sass/_screen.scss */
+  .wrapper .home-banner .banner-tabs li a {
+    width: 240px;
+    height: 80px;
+    padding-top: 30px;
+  }
+  /* line 387, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list a {
+    width: 100%;
+  }
+  /* line 390, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-1 {
+    height: 600px;
+    background-size: 100%;
+  }
+  /* line 396, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-1 .banner1-font {
+    width: 340px;
+    height: 200px;
+    top: 23%;
+  }
+  /* line 401, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-1 .banner1-animate {
+    width: 700px;
+    height: 600px;
+    left: 14%;
+  }
+  /* line 409, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 {
+    height: 600px;
+  }
+  /* line 411, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 .banner2-animate {
+    width: 580px;
+    height: 600px;
+  }
+  /* line 415, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 .banner2-icon {
+    width: 200px;
+    height: 250px;
+    top: 16%;
+  }
+  /* line 420, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 .banner2-font {
+    width: 550px;
+    height: 300px;
+    top: 13%;
+  }
+  /* line 426, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 {
+    height: 600px;
+  }
+  /* line 428, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 .banner3-animate {
+    width: 700px;
+    height: 600px;
+    left: 12%;
+  }
+  /* line 433, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 .banner3-product {
+    width: 200px;
+    height: 150px;
+    right: 27%;
+    top: 34%;
+  }
+  /* line 439, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 .banner3-font {
+    width: 380px;
+    height: 80px;
+    right: 20%;
+    top: 20%;
+  }
+  /* line 446, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 {
+    height: 600px;
+  }
+  /* line 448, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 .banner4-product {
+    height: 600px;
+    top: -21px;
+  }
+  /* line 452, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 .banner4-icon {
+    width: 590px;
+  }
+  /* line 455, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 .banner4-font {
+    width: 400px;
+    height: 320px;
+  }
+  /* line 464, ../sass/_screen.scss */
+  .wrapper .home-column .bigpic {
+    width: 100%;
+  }
+  /* line 469, ../sass/_screen.scss */
+  .wrapper .about-columnList {
+    background-size: 100%;
+    height: 100%;
+    min-height: 440px;
+  }
+  /* line 473, ../sass/_screen.scss */
+  .wrapper .about-columnList .intro-left {
+    top: 24%;
+  }
+  /* line 476, ../sass/_screen.scss */
+  .wrapper .about-columnList .intro-right {
+    top: 24%;
+  }
+  /* line 479, ../sass/_screen.scss */
+  .wrapper .about-columnList .ac-brand-story {
+    background: url(../images/about/about_banner1.jpg) -350px -30px no-repeat\9;
+  }
+  /* line 482, ../sass/_screen.scss */
+  .wrapper .about-columnList .ac-group-intro {
+    background: url(../images/about/about_banner2.jpg) -100px -30px no-repeat\9;
+  }
+  /* line 485, ../sass/_screen.scss */
+  .wrapper .about-columnList .ac-hot-news {
+    background: url(../images/about/about_banner3.jpg) -300px -40px no-repeat\9;
+  }
+  /* line 488, ../sass/_screen.scss */
+  .wrapper .about-columnList .ac-honor {
+    background: url(../images/about/about_banner4.jpg) -100px -30px no-repeat\9;
+  }
+  /* line 493, ../sass/_screen.scss */
+  .wrapper .profile-wrapper {
+    height: 850px;
+    background: url(../images/about/company_profile_bg.jpg) 0px -50px no-repeat;
+  }
+  /* line 496, ../sass/_screen.scss */
+  .wrapper .profile-wrapper .intro-profile {
+    right: 100px;
+  }
+  /* line 499, ../sass/_screen.scss */
+  .wrapper .profile-wrapper h2 {
+    right: 360px;
+  }
+  /* line 503, ../sass/_screen.scss */
+  .wrapper .company-size-wrapper {
+    height: 850px;
+  }
+  /* line 505, ../sass/_screen.scss */
+  .wrapper .company-size-wrapper .intro-wrapper {
+    right: 120px;
+  }
+  /* line 508, ../sass/_screen.scss */
+  .wrapper .company-size-wrapper .company-map {
+    background-size: 85%;
+    left: 3%;
+  }
+  /* line 513, ../sass/_screen.scss */
+  .wrapper .develop-wrapper {
+    height: 850px;
+    background: url(../images/about/develop_bg.jpg) -150px -50px no-repeat;
+  }
+  /* line 516, ../sass/_screen.scss */
+  .wrapper .develop-wrapper .intro-wrapper {
+    right: 120px;
+  }
+  /* line 520, ../sass/_screen.scss */
+  .wrapper .education-wrapper {
+    height: 850px;
+    background: url(../images/about/education_bg.jpg) -150px -50px no-repeat;
+  }
+  /* line 523, ../sass/_screen.scss */
+  .wrapper .education-wrapper .intro-wrapper {
+    right: 120px;
+  }
+  /* line 528, ../sass/_screen.scss */
+  .wrapper .hg-content .hg-nav {
+    width: 1240px;
+  }
+  /* line 531, ../sass/_screen.scss */
+  .wrapper .fantasia-banner, .wrapper .sunscreen-banner, .wrapper .whitening-banner, .wrapper .skincare-banner, .wrapper .acne-banner, .wrapper .oil-banner {
+    background-position: 0px -70px;
+  }
+  /* line 534, ../sass/_screen.scss */
+  .wrapper .hg-content .hg-banner {
+    background-size: 100%;
+    height: 100%;
+    min-height: 600px;
+  }
+  /* line 538, ../sass/_screen.scss */
+  .wrapper .hg-content .hg-banner .pro-slogan {
+    top: 35%;
+  }
+  /* line 541, ../sass/_screen.scss */
+  .wrapper .hg-content .hg-banner .down-btn {
+    bottom: 15%;
+  }
+  /* line 547, ../sass/_screen.scss */
+  .wrapper .spa-content .courses-list {
+    background-size: 100%;
+    height: 100%;
+    min-height: 440px;
+  }
+  /* line 552, ../sass/_screen.scss */
+  .wrapper .spa-content .courses-list .title-en {
+    font-size: 42px;
+  }
+  /* line 555, ../sass/_screen.scss */
+  .wrapper .spa-content .title-ch {
+    font-size: 36px;
+    margin-top: 0px;
+  }
+  /* line 559, ../sass/_screen.scss */
+  .wrapper .spa-content .content {
+    top: 90px;
+  }
+  /* line 562, ../sass/_screen.scss */
+  .wrapper .spa-content .content-right {
+    top: 100px;
+  }
+  /* line 565, ../sass/_screen.scss */
+  .wrapper .spa-content .product {
+    margin-top: 30px;
+  }
+  /* line 568, ../sass/_screen.scss */
+  .wrapper .spa-content .pro-banner {
+    background-size: 100%;
+    height: 100%;
+    min-height: 600px;
+  }
+  /* line 573, ../sass/_screen.scss */
+  .wrapper .spa-content .pro-banner .pro-slogan {
+    top: 35%;
+  }
+  /* line 576, ../sass/_screen.scss */
+  .wrapper .spa-content .pro-banner .down-btn {
+    bottom: 15%;
+  }
+  /* line 579, ../sass/_screen.scss */
+  .wrapper .spa-content .star-courses {
+    background: url(../images/profession/spa_banner1.jpg) -490px -40px no-repeat\9;
+    *background: url(../images/profession/spa_banner1.jpg) -360px -40px no-repeat;
+  }
+  /* line 583, ../sass/_screen.scss */
+  .wrapper .spa-content .face-courses {
+    background: url(../images/profession/spa_banner2.jpg) 0px -60px no-repeat\9;
+  }
+  /* line 586, ../sass/_screen.scss */
+  .wrapper .spa-content .classic-courses {
+    background: url(../images/profession/spa_banner3.jpg) -490px -40px no-repeat\9;
+    *background: url(../images/profession/spa_banner3.jpg) -345px -40px no-repeat;
+  }
+  /* line 590, ../sass/_screen.scss */
+  .wrapper .spa-content .body-courses {
+    background: url(../images/profession/spa_banner4.jpg) 0 no-repeat\9;
+  }
+  /* line 596, ../sass/_screen.scss */
+  .wrapper .spirit-brand .spirit-brand-right {
+    width: 691px;
+    height: 615px;
+    right: 80px;
+  }
+  /* line 597, ../sass/_screen.scss */
+  .wrapper .spirit-brand .spirit-brand-right img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 605, ../sass/_screen.scss */
+  .wrapper .spirit-brand .video {
+    left: 502px;
+  }
+  /* line 609, ../sass/_screen.scss */
+  .wrapper .video-brand {
+    height: 713px;
+  }
+  /* line 611, ../sass/_screen.scss */
+  .wrapper .video-brand .video-content {
+    background-size: 100%;
+  }
+  /* line 615, ../sass/_screen.scss */
+  .wrapper .video-brand .video-content .video-title {
+    width: 370px;
+    height: 335px;
+  }
+
+  /* line 623, ../sass/_screen.scss */
+  .snow-main .snow-content {
+    height: 1800px;
+    background-position: -200px 0;
+  }
+  /* line 626, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-banner img {
+    width: 1580px;
+  }
+  /* line 629, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font1 {
+    top: 38%;
+    left: 13%;
+  }
+  /* line 633, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font1 img {
+    width: 580px;
+  }
+  /* line 636, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font2 {
+    top: 48%;
+    left: 13%;
+  }
+  /* line 640, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font2 img {
+    width: 580px;
+  }
+  /* line 643, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font0 {
+    top: 34%;
+    right: 10%;
+  }
+  /* line 647, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font0 img {
+    width: 580px;
+  }
+  /* line 650, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font3 {
+    top: 59%;
+    right: 11%;
+  }
+  /* line 654, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font3 img {
+    width: 580px;
+  }
+
+  /*里程碑*/
+  /* line 661, ../sass/_screen.scss */
+  .milestone .milestone-1989 {
+    background-size: 100%;
+    height: 100%;
+    min-height: 470px;
+  }
+  /* line 666, ../sass/_screen.scss */
+  .milestone .text-1989 {
+    top: 120px;
+  }
+  /* line 669, ../sass/_screen.scss */
+  .milestone .down-btn {
+    bottom: 18%;
+  }
+  /* line 672, ../sass/_screen.scss */
+  .milestone .milestone-2013 {
+    background-size: 100%;
+    height: 245px;
+  }
+  /* line 675, ../sass/_screen.scss */
+  .milestone .milestone-2013 .text-2013 {
+    width: 680px;
+    height: 100px;
+  }
+  /* line 680, ../sass/_screen.scss */
+  .milestone .milestone-2014 {
+    background-size: 100%;
+    height: 420px;
+  }
+  /* line 684, ../sass/_screen.scss */
+  .milestone .milestone-2014 .text-2014 {
+    width: 470px;
+    height: 108px;
+  }
+  /* line 687, ../sass/_screen.scss */
+  .milestone .milestone-2014 .text-2014 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 695, ../sass/_screen.scss */
+  .ideas-content {
+    width: 100%;
+    background-size: 100%;
+    height: 640px;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/spa/product_ideas.jpg', sizingMethod='scale');
+  }
+  /* line 702, ../sass/_screen.scss */
+  .ideas-content .ideas-title {
+    top: 20%;
+    left: 13%;
+    width: 550px;
+    height: 270px;
+  }
+
+  /*公司规模*/
+  /* line 710, ../sass/_screen.scss */
+  .company-size-wrapper .company-map {
+    background-size: 76%;
+    left: 3%;
+    width: 695px;
+  }
+  /* line 714, ../sass/_screen.scss */
+  .company-size-wrapper .company-map img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /*首页*/
+  /* line 722, ../sass/_screen.scss */
+  .wrapper {
+    /*二级目录*/
+  }
+  /* line 723, ../sass/_screen.scss */
+  .wrapper .about-sub-menu .sub-content {
+    padding-top: 30px;
+  }
+  /* line 727, ../sass/_screen.scss */
+  .wrapper .hg-nav {
+    width: 1080px !important;
+  }
+  /* line 729, ../sass/_screen.scss */
+  .wrapper .hg-nav a {
+    margin: 0px 8px 0px 8px !important;
+  }
+  /* line 733, ../sass/_screen.scss */
+  .wrapper .company-nav {
+    width: 470px !important;
+    margin: 0 auto;
+  }
+  /* line 737, ../sass/_screen.scss */
+  .wrapper .star-nav {
+    width: 910px !important;
+    margin: 0 auto;
+  }
+  /* line 741, ../sass/_screen.scss */
+  .wrapper .face-nav {
+    width: 340px !important;
+    margin: 0 auto;
+  }
+  /* line 745, ../sass/_screen.scss */
+  .wrapper .classic-nav {
+    width: 780px !important;
+    margin: 0 auto;
+  }
+  /* line 749, ../sass/_screen.scss */
+  .wrapper .body-nav {
+    width: 660px !important;
+    margin: 0 auto;
+  }
+  /* line 753, ../sass/_screen.scss */
+  .wrapper .test-nav {
+    margin: 0 auto;
+  }
+  /* line 760, ../sass/_screen.scss */
+  .wrapper .skin-nav {
+    width: 380px !important;
+  }
+  /* line 763, ../sass/_screen.scss */
+  .wrapper .landing-page {
+    height: 768px;
+  }
+  /* line 765, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-logo {
+    top: 140px;
+  }
+  /* line 768, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-down {
+    top: 500px;
+  }
+  /* line 771, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-play {
+    top: 290px;
+  }
+  /* line 774, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-slogan {
+    top: 380px;
+  }
+  /* line 778, ../sass/_screen.scss */
+  .wrapper .shade-videobg {
+    height: 768px;
+  }
+  /* line 781, ../sass/_screen.scss */
+  .wrapper .home-banner {
+    height: 500px;
+  }
+  /* line 783, ../sass/_screen.scss */
+  .wrapper .home-banner .slide-wrapper {
+    height: 500px;
+  }
+  /* line 786, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list {
+    height: 500px;
+  }
+  /* line 788, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner1-animate {
+    width: 602px;
+    height: 500px;
+  }
+  /* line 792, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner1-font {
+    width: 325px;
+    height: 190px;
+  }
+  /* line 796, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-leaves2 {
+    width: 49px;
+    height: 49px;
+  }
+  /* line 800, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-leaves1 {
+    width: 49px;
+    height: 59px;
+  }
+  /* line 805, ../sass/_screen.scss */
+  .wrapper .home-banner .banner-tabs li {
+    width: 240px;
+    height: 80px;
+    *height: 50px;
+    padding-top: 30px;
+  }
+  /* line 811, ../sass/_screen.scss */
+  .wrapper .home-banner .banner-tabs .large-font {
+    padding-top: 20px;
+    *height: 60px;
+  }
+  /* line 816, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list a {
+    width: 100%;
+  }
+  /* line 819, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-1 {
+    height: 500px;
+    background-size: 100%;
+  }
+  /* line 824, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-1 .banner1-font {
+    width: 300px;
+    height: 180px;
+  }
+  /* line 828, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-1 .banner1-animate {
+    width: 580px;
+    height: 500px;
+    left: 15%;
+  }
+  /* line 836, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 {
+    height: 500px;
+  }
+  /* line 838, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 .banner2-animate {
+    width: 480px;
+    height: 500px;
+  }
+  /* line 842, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 .banner2-icon {
+    width: 190px;
+    height: 240px;
+    top: 22%;
+  }
+  /* line 847, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 .banner2-font {
+    width: 450px;
+    height: 260px;
+  }
+  /* line 852, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 {
+    height: 500px;
+  }
+  /* line 854, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 .banner3-animate {
+    width: 600px;
+    height: 500px;
+    left: 13%;
+  }
+  /* line 859, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 .banner3-product {
+    width: 180px;
+    height: 140px;
+    right: 25%;
+    top: 44%;
+  }
+  /* line 865, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 .banner3-font {
+    width: 320px;
+    height: 70px;
+    right: 18%;
+    top: 26%;
+  }
+  /* line 872, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 {
+    height: 500px;
+  }
+  /* line 874, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 .banner4-product {
+    top: -13px;
+  }
+  /* line 877, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 .banner4-icon {
+    width: 500px;
+  }
+  /* line 880, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 .banner4-font {
+    width: 320px;
+    height: 250px;
+  }
+
+  /*走进克丽缇娜*/
+  /* line 894, ../sass/_screen.scss */
+  .about-content .video-brand {
+    height: 580px;
+    *height: 570px;
+  }
+  /* line 897, ../sass/_screen.scss */
+  .about-content .video-brand .video-content {
+    width: 1000px;
+    height: 500px;
+  }
+  /* line 901, ../sass/_screen.scss */
+  .about-content .video-brand .video-summary {
+    top: 130px;
+  }
+  /* line 905, ../sass/_screen.scss */
+  .about-content .right-nav {
+    top: 280px;
+  }
+
+  /* line 909, ../sass/_screen.scss */
+  .about-columnList {
+    background-size: 100%;
+    height: 100%;
+    min-height: 390px;
+  }
+  /* line 913, ../sass/_screen.scss */
+  .about-columnList .ac-brand-story {
+    background: url(../images/about/about_banner1.jpg) -460px -30px no-repeat\9;
+  }
+  /* line 916, ../sass/_screen.scss */
+  .about-columnList .ac-group-intro {
+    background: url(../images/about/about_banner2.jpg) -100px -30px no-repeat\9;
+  }
+  /* line 919, ../sass/_screen.scss */
+  .about-columnList .ac-hot-news {
+    background: url(../images/about/about_banner3.jpg) -400px -60px no-repeat\9;
+  }
+  /* line 922, ../sass/_screen.scss */
+  .about-columnList .ac-honor {
+    background: url(../images/about/about_banner4.jpg) -190px -60px no-repeat\9;
+  }
+  /* line 925, ../sass/_screen.scss */
+  .about-columnList .intro-left {
+    top: 22%;
+  }
+  /* line 928, ../sass/_screen.scss */
+  .about-columnList .intro-right {
+    top: 22%;
+  }
+  /* line 931, ../sass/_screen.scss */
+  .about-columnList h2 {
+    font-size: 42px;
+  }
+  /* line 934, ../sass/_screen.scss */
+  .about-columnList .summary {
+    font-size: 13px;
+  }
+
+  /* line 938, ../sass/_screen.scss */
+  .ac-brand-story {
+    *background: url(../images/about/about_banner1_1366.jpg) top center no-repeat;
+    background: url(../images/about/about_banner1_1366.jpg) top center no-repeat\0;
+  }
+
+  /* line 942, ../sass/_screen.scss */
+  .ac-group-intro {
+    *background: url(../images/about/about_banner2_1366.jpg) top center no-repeat;
+    background: url(../images/about/about_banner2_1366.jpg) top center no-repeat\0;
+  }
+
+  /* line 946, ../sass/_screen.scss */
+  .ac-hot-news {
+    *background: url(../images/about/about_banner3_1366.jpg) top center no-repeat;
+    background: url(../images/about/about_banner3_1366.jpg) top center no-repeat\0;
+  }
+
+  /* line 950, ../sass/_screen.scss */
+  .ac-honor {
+    *background: url(../images/about/about_banner4_1366.jpg) top center no-repeat;
+    background: url(../images/about/about_banner4_1366.jpg) top center no-repeat\0;
+  }
+
+  /* line 954, ../sass/_screen.scss */
+  .ac-responsibility {
+    *background: url(../images/about/about_banner5_1366.jpg) top center no-repeat;
+    background: url(../images/about/about_banner5_1366.jpg) top center no-repeat\0;
+  }
+
+  /* line 958, ../sass/_screen.scss */
+  .ac-video {
+    *background: url(../images/about/about_banner6_1366.jpg) top center no-repeat;
+    background: url(../images/about/about_banner6_1366.jpg) top center no-repeat\0;
+  }
+
+  /*公司简介*/
+  /* line 964, ../sass/_screen.scss */
+  .develop-education .intro-wrapper {
+    right: 90px;
+    width: 480px;
+  }
+
+  /* line 969, ../sass/_screen.scss */
+  .profile-wrapper {
+    height: 945px;
+    background: url(../images/about/company_profile_bg.jpg) no-repeat;
+  }
+  /* line 972, ../sass/_screen.scss */
+  .profile-wrapper .intro-profile {
+    right: 100px;
+    top: 200px;
+    width: 470px;
+  }
+  /* line 977, ../sass/_screen.scss */
+  .profile-wrapper h2 {
+    right: 260px;
+  }
+
+  /* line 981, ../sass/_screen.scss */
+  .company-size-wrapper {
+    height: 850px;
+  }
+  /* line 983, ../sass/_screen.scss */
+  .company-size-wrapper .intro-wrapper {
+    right: 90px;
+    width: 400px;
+  }
+  /* line 987, ../sass/_screen.scss */
+  .company-size-wrapper .intro-cs {
+    width: 400px;
+    height: 450px;
+  }
+
+  /* line 992, ../sass/_screen.scss */
+  .develop-wrapper {
+    height: 850px;
+    background: url(../images/about/develop_bg.jpg) -150px -50px no-repeat;
+  }
+  /* line 995, ../sass/_screen.scss */
+  .develop-wrapper .intro-wrapper {
+    right: 90px;
+    width: 480px;
+  }
+  /* line 999, ../sass/_screen.scss */
+  .develop-wrapper .intro-d-e {
+    width: 510px;
+  }
+
+  /* line 1003, ../sass/_screen.scss */
+  .education-wrapper {
+    height: 850px;
+    background: url(../images/about/education_bg.jpg) -300px -20px no-repeat;
+  }
+  /* line 1006, ../sass/_screen.scss */
+  .education-wrapper .intro-wrapper {
+    right: 120px;
+    width: 480px;
+  }
+
+  /* line 1013, ../sass/_screen.scss */
+  .main-brand .one-flowers {
+    left: -170px;
+  }
+  /* line 1016, ../sass/_screen.scss */
+  .main-brand .begin-brand {
+    left: 200px;
+  }
+  /* line 1019, ../sass/_screen.scss */
+  .main-brand .concept-brand {
+    left: 210px;
+  }
+  /* line 1022, ../sass/_screen.scss */
+  .main-brand .dr-brand-left {
+    left: 233px;
+  }
+  /* line 1025, ../sass/_screen.scss */
+  .main-brand .dr-brand-right {
+    right: 390px;
+  }
+
+  /*品牌故事*/
+  /* line 1033, ../sass/_screen.scss */
+  .main-brand .pic-dr2 {
+    left: 388px;
+  }
+  /* line 1036, ../sass/_screen.scss */
+  .main-brand .epo {
+    left: 646px;
+  }
+
+  /* line 1040, ../sass/_screen.scss */
+  .family-brand {
+    background-size: 100%;
+    height: 100%;
+    min-height: 590px;
+    *min-height: 590px;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/about/brand_story_banner.jpg', sizingMethod='scale');
+    *background: url(../images/about/brand_story_banner1366.jpg) left center no-repeat;
+    background: url(../images/about/brand_story_banner1366.jpg) left center no-repeat\0;
+  }
+  /* line 1052, ../sass/_screen.scss */
+  .family-brand .slogan-brand {
+    padding-top: 120px;
+  }
+  /* line 1055, ../sass/_screen.scss */
+  .family-brand .down-brand {
+    bottom: 10%;
+  }
+
+  /* line 1060, ../sass/_screen.scss */
+  .spirit-brand .spirit-brand-left {
+    left: 14%;
+  }
+  /* line 1063, ../sass/_screen.scss */
+  .spirit-brand .spirit-brand-right {
+    right: 0;
+  }
+
+  /* line 1068, ../sass/_screen.scss */
+  .spirit-brand .spirit-brand-right {
+    width: 602px;
+    height: 553px;
+    right: 50px;
+  }
+  /* line 1069, ../sass/_screen.scss */
+  .spirit-brand .spirit-brand-right img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 1081, ../sass/_screen.scss */
+  .about-content .video-brand .video-content {
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 1086, ../sass/_screen.scss */
+  .about-content .video-brand .video-content .video-title {
+    width: 350px;
+    height: 310px;
+  }
+
+  /* line 1091, ../sass/_screen.scss */
+  .spirit-brand .video {
+    left: 25%;
+    top: 77%;
+  }
+
+  /*企业文化*/
+  /* line 1096, ../sass/_screen.scss */
+  .culture-slogan {
+    top: 20%;
+  }
+
+  /* line 1099, ../sass/_screen.scss */
+  .culture-banner {
+    height: 700px;
+    background: url(../images/about/culture/culture_banner.jpg) 0px -200px no-repeat;
+  }
+
+  /*里程碑*/
+  /* line 1105, ../sass/_screen.scss */
+  .milestone .milestone-1989 {
+    background-size: 100%;
+    height: 100%;
+    min-height: 550px;
+    *background: url(../images/about/milestone_1989bg.jpg) center -60px no-repeat;
+    background: url(../images/about/milestone_1989bg.jpg) center -60px no-repeat\0;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/about/milestone_1989bg.jpg', sizingMethod='scale');
+  }
+  /* line 1115, ../sass/_screen.scss */
+  .milestone .text-1989 {
+    top: 120px;
+  }
+  /* line 1118, ../sass/_screen.scss */
+  .milestone .down-btn {
+    bottom: 18%;
+  }
+  /* line 1121, ../sass/_screen.scss */
+  .milestone .milestone-2013 {
+    background-size: 100%;
+    height: 245px;
+  }
+  /* line 1124, ../sass/_screen.scss */
+  .milestone .milestone-2013 .text-2013 {
+    width: 680px;
+    height: 100px;
+  }
+  /* line 1129, ../sass/_screen.scss */
+  .milestone .milestone-2014 {
+    background-size: 100%;
+    height: 420px;
+  }
+  /* line 1133, ../sass/_screen.scss */
+  .milestone .milestone-2014 .text-2014 {
+    width: 350px;
+    height: 108px;
+  }
+  /* line 1136, ../sass/_screen.scss */
+  .milestone .milestone-2014 .text-2014 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*公司规模*/
+  /* line 1144, ../sass/_screen.scss */
+  .company-size-wrapper .company-map {
+    background-size: 76%;
+    left: 3%;
+    width: 650px;
+  }
+  /* line 1148, ../sass/_screen.scss */
+  .company-size-wrapper .company-map img {
+    width: 100%;
+  }
+
+  /*企业荣誉*/
+  /* line 1153, ../sass/_screen.scss */
+  .honor-main {
+    height: 600px;
+  }
+
+  /* line 1156, ../sass/_screen.scss */
+  .honor-content {
+    padding-top: 120px;
+  }
+  /* line 1158, ../sass/_screen.scss */
+  .honor-content .left-arrow {
+    left: -90px;
+  }
+  /* line 1161, ../sass/_screen.scss */
+  .honor-content .right-arrow {
+    right: -90px;
+  }
+
+  /*居家护理*/
+  /* line 1166, ../sass/_screen.scss */
+  .top-nav-content li a {
+    margin: 0px 15px 0px 15px;
+  }
+
+  /* line 1169, ../sass/_screen.scss */
+  .hg-content .hg-nav {
+    width: 1120px;
+  }
+
+  /* line 1172, ../sass/_screen.scss */
+  .hg-content .hg-banner {
+    background-size: 100%;
+    height: 100%;
+    min-height: 522px;
+  }
+  /* line 1177, ../sass/_screen.scss */
+  .hg-content .hg-banner .pro-slogan {
+    top: 35%;
+  }
+  /* line 1180, ../sass/_screen.scss */
+  .hg-content .hg-banner .down-btn {
+    bottom: 15%;
+  }
+
+  /* line 1184, ../sass/_screen.scss */
+  .hg-content .fantasia-banner .pro-slogan {
+    left: 7%;
+  }
+
+  /* line 1187, ../sass/_screen.scss */
+  .product-detail-content {
+    height: 600px;
+  }
+ .wrapper .plant-detail-content{ height:746px;}
+
+  /*小屏幕banner适应*/
+  /* line 1191, ../sass/_screen.scss */
+  .epo-banner {
+    *background: url(../images/spa/1366/epo_bg_1440.jpg) top center no-repeat;
+    background: url(../images/spa/1366/epo_bg_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+
+  /* line 1196, ../sass/_screen.scss */
+  .ps-banner {
+    *background: url(../images/spa/1366/ps_banner_1440.jpg) top center no-repeat;
+    background: url(../images/spa/1366/ps_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+
+  /* line 1201, ../sass/_screen.scss */
+  .water-banner {
+    *background: url(../images/spa/1366/water_banner_1440.jpg) 0 29px no-repeat;
+    background: url(../images/spa/1366/water_banner_1440.jpg) 0 29px no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1201, ../sass/_screen.scss */
+  .plant-banner {
+    *background: url(../images/spa/1366/plant_banner_1440.jpg) 0 29px no-repeat;
+    background: url(../images/spa/1366/plant_banner_1440.jpg) 0 29px no-repeat\0;
+    background-size: 100%;
+  }
+
+  /* line 1206, ../sass/_screen.scss */
+  .fantasia-banner {
+    *background: url(../images/spa/1366/fantasia_banner_1440.jpg) top center no-repeat !important;
+    background: url(../images/spa/1366/fantasia_banner_1440.jpg) top center no-repeat\0  !important;
+    background-size: 100%;
+  }
+
+  /* line 1211, ../sass/_screen.scss */
+  .sunscreen-banner {
+    background: url(../images/spa/1366/sunscreen_banner_1440.jpg) 0px -80px no-repeat;
+    background-size: 100%;
+  }
+
+  /* line 1215, ../sass/_screen.scss */
+  .whitening-banner {
+    *background: url(../images/spa/1366/whitening_banner_1440.jpg) -20px -80px no-repeat;
+    background: url(../images/spa/1366/whitening_banner_1440.jpg) -20px -80px no-repeat\0;
+    background-size: 100%;
+  }
+
+  /* line 1220, ../sass/_screen.scss */
+  .skincare-banner {
+    *background: url(../images/spa/1366/skincare_banner_1440.jpg) 0px 0px no-repeat !important;
+    background: url(../images/spa/1366/skincare_banner_1440.jpg) 0px 0px no-repeat\0  !important;
+    background-size: 100%;
+  }
+
+  /* line 1225, ../sass/_screen.scss */
+  .classic-banner {
+    *background: url(../images/spa/1366/classic_banner_1440.jpg) top center no-repeat;
+    background: url(../images/spa/1366/classic_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+
+  /* line 1230, ../sass/_screen.scss */
+  .acne-banner {
+    *background: url(../images/spa/1366/acne_banner_1440.jpg) 0px -150px no-repeat !important;
+    background: url(../images/spa/1366/acne_banner_1440.jpg) 0px -150px no-repeat\0  !important;
+    background-size: 100%;
+  }
+
+  /* line 1235, ../sass/_screen.scss */
+  .rose-banner {
+    *background: url(../images/spa/1366/rose_banner_1440.jpg) top center no-repeat;
+    background: url(../images/spa/1366/rose_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+
+  /* line 1240, ../sass/_screen.scss */
+  .francelle-banner {
+    *background: url(../images/spa/1366/francelle_banner_1440.jpg) top center no-repeat;
+    background: url(../images/spa/1366/francelle_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+
+  /* line 1245, ../sass/_screen.scss */
+  .compact-banner {
+    *background: url(../images/spa/1366/compact_banner_1440.jpg) top center no-repeat;
+    background: url(../images/spa/1366/compact_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+
+  /* line 1250, ../sass/_screen.scss */
+  .oil-banner {
+    *background: url(../images/spa/1366/oil_banner_1440.jpg) top center no-repeat;
+    background: url(../images/spa/1366/oil_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+
+  /* line 1255, ../sass/_screen.scss */
+  .marigold-banner {
+    *background: url(../images/spa/1366/marigold_banner_1440.jpg) top center no-repeat;
+    background: url(../images/spa/1366/marigold_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+
+  /* line 1260, ../sass/_screen.scss */
+  .product-slide-wrapper {
+    top: 42%;
+  }
+  /* line 1262, ../sass/_screen.scss */
+  .product-slide-wrapper .slider-arrow .left-arrow {
+    left: -20%;
+    top: 26%;
+  }
+  /* line 1266, ../sass/_screen.scss */
+  .product-slide-wrapper .slider-arrow .right-arrow {
+    right: -20%;
+    *right: -24%;
+    top: 26%;
+  }
+  /* line 1271, ../sass/_screen.scss */
+  .product-slide-wrapper .slick-dots {
+    bottom: -35px;
+  }
+
+  /*专业护理*/
+  /* line 1277, ../sass/_screen.scss */
+  .spa-content {
+    /*底部详情背景*/
+  }
+  /* line 1278, ../sass/_screen.scss */
+  .spa-content .courses-list {
+    background-size: 100%;
+    height: 100%;
+    min-height: 390px;
+  }
+  /* line 1283, ../sass/_screen.scss */
+  .spa-content .courses-list .title-en {
+    font-size: 42px;
+  }
+  /* line 1286, ../sass/_screen.scss */
+  .spa-content .title-ch {
+    font-size: 36px;
+    margin-top: 0px;
+  }
+  /* line 1290, ../sass/_screen.scss */
+  .spa-content .content {
+    top: 60px;
+    left: 15%;
+  }
+  /* line 1294, ../sass/_screen.scss */
+  .spa-content .content-right {
+    top: 60px;
+    right: 15%;
+  }
+  /* line 1298, ../sass/_screen.scss */
+  .spa-content .product {
+    margin-top: 40px;
+  }
+  /* line 1301, ../sass/_screen.scss */
+  .spa-content .pro-banner {
+    background-size: 100%;
+    height: 100%;
+    min-height: 470px;
+  }
+  /* line 1306, ../sass/_screen.scss */
+  .spa-content .pro-banner .pro-slogan {
+    top: 35%;
+  }
+  /* line 1309, ../sass/_screen.scss */
+  .spa-content .pro-banner .down-btn {
+    bottom: 15%;
+  }
+  /* line 1313, ../sass/_screen.scss */
+  .spa-content .star-courses {
+    background: url(../images/profession/spa_banner1.jpg) -590px -40px no-repeat\9;
+    *background: url(../images/profession/spa_banner1_1366.jpg) -190px -40px no-repeat;
+    background: url(../images/profession/spa_banner1_1366.jpg) -190px -40px no-repeat\0;
+  }
+  /* line 1318, ../sass/_screen.scss */
+  .spa-content .face-courses {
+    background: url(../images/profession/spa_banner2.jpg) 0px -60px no-repeat\9;
+  }
+  /* line 1321, ../sass/_screen.scss */
+  .spa-content .classic-courses {
+    background: url(../images/profession/spa_banner3.jpg) -590px -40px no-repeat\9;
+    *background: url(../images/profession/spa_banner3_1366.jpg) top center no-repeat;
+    background: url(../images/profession/spa_banner3_1366.jpg) top center no-repeat\0;
+  }
+  /* line 1326, ../sass/_screen.scss */
+  .spa-content .body-courses {
+    background: url(../images/profession/spa_banner4.jpg) 0 no-repeat\9;
+  }
+
+  /*专业护理首屏banner*/
+  /* line 1331, ../sass/_screen.scss */
+  .spa-content {
+    /*明星疗程*/
+    /*脸部疗程*/
+    /*经典疗程*/
+    /*美体疗程*/
+  }
+  /* line 1333, ../sass/_screen.scss */
+  .spa-content .active-banner {
+    *background: url(../images/profession/1366/active_essence_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/active_essence_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1338, ../sass/_screen.scss */
+  .spa-content .clean-banner {
+    background: url(../images/profession/1366/clean_banner_1440.jpg) top center no-repeat;
+    *background: url(../images/profession/1366/clean_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/clean_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1344, ../sass/_screen.scss */
+  .spa-content .sunny-banner {
+    background: url(../images/profession/1366/sunny_banner_1440.jpg) 0 -100px no-repeat;
+    background-size: 100%;
+  }
+  /* line 1348, ../sass/_screen.scss */
+  .spa-content .charm-banner {
+    *background: url(../images/profession/1366/charm_banner_1440.jpg) 0px -60px no-repeat;
+    background: url(../images/profession/1366/charm_banner_1440.jpg) 0px -60px no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1353, ../sass/_screen.scss */
+  .spa-content .contour-banner {
+    *background: url(../images/profession/1366/contour_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/contour_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1358, ../sass/_screen.scss */
+  .spa-content .eyes-banner {
+    *background: url(../images/profession/1366/eyes_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/eyes_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1363, ../sass/_screen.scss */
+  .spa-content .carving-banner {
+    *background: url(../images/profession/1366/carving_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/carving_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1368, ../sass/_screen.scss */
+  .spa-content .anthosin-banner {
+    background: url(../images/profession/1366/anthosin_banner_1440.jpg) 0 -130px no-repeat;
+    background-size: 100%;
+  }
+  /* line 1373, ../sass/_screen.scss */
+  .spa-content .moist-banner {
+    *background: url(../images/profession/1366/moist_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/moist_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1378, ../sass/_screen.scss */
+  .spa-content .whiten-banner {
+    background: url(../images/profession/1366/whitening_banner_1440.jpg) 0 -100px no-repeat;
+    background-size: 100%;
+  }
+  /* line 1382, ../sass/_screen.scss */
+  .spa-content .pore-banner {
+    *background: url(../images/profession/1366/pore_banner_1440.jpg) 0 -40px no-repeat;
+    background: url(../images/profession/1366/pore_banner_1440.jpg) 0 -40px no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1388, ../sass/_screen.scss */
+  .spa-content .acne-banner {
+    *background: url(../images/profession/1366/acne_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/acne_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1393, ../sass/_screen.scss */
+  .spa-content .relieve-banner {
+    *background: url(../images/profession/1366/relieve_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/relieve_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1398, ../sass/_screen.scss */
+  .spa-content .compact-t-banner {
+    *background: url(../images/profession/1366/compact_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/compact_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1403, ../sass/_screen.scss */
+  .spa-content .roses-banner {
+    *background: url(../images/profession/1366/rose_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/rose_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1408, ../sass/_screen.scss */
+  .spa-content .condensate-banner {
+    *background: url(../images/profession/1366/condensate_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/condensate_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1413, ../sass/_screen.scss */
+  .spa-content .porcelain-banner {
+    *background: url(../images/profession/1366/porcelain_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/porcelain_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1418, ../sass/_screen.scss */
+  .spa-content .update-banner {
+    *background: url(../images/profession/1366/update_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/update_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1424, ../sass/_screen.scss */
+  .spa-content .silky-banner {
+    *background: url(../images/profession/1366/silky_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/silky_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1429, ../sass/_screen.scss */
+  .spa-content .back-living-banner {
+    *background: url(../images/profession/1366/back_living_banner_1440.jpg) -20px -100px no-repeat;
+    background: url(../images/profession/1366/back_living_banner_1440.jpg) -20px -100px no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1434, ../sass/_screen.scss */
+  .spa-content .back-detox-banner {
+    *background: url(../images/profession/1366/back_detox_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/back_detox_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1439, ../sass/_screen.scss */
+  .spa-content .body-detox-banner {
+    *background: url(../images/profession/1366/body_detox_banner_1440.jpg) top center no-repeat;
+    background: url(../images/profession/1366/body_detox_banner_1440.jpg) top center no-repeat\0;
+    background-size: 100%;
+  }
+  /* line 1444, ../sass/_screen.scss */
+  .spa-content .energy-banner {
+    *background: url(../images/profession/1366/energy_banner_1440.jpg) 0px -200px no-repeat;
+    background: url(../images/profession/1366/energy_banner_1440.jpg) 0px -200px no-repeat\0;
+    background: url(../images/profession/1366/energy_banner_1440.jpg) 0px -200px no-repeat;
+    background-size: 100%;
+  }
+
+  /*我的肌肤顾问*/
+  /* line 1453, ../sass/_screen.scss */
+  .question-content {
+    height: 720px;
+  }
+  /* line 1455, ../sass/_screen.scss */
+  .question-content .book {
+    top: 300px;
+  }
+  /* line 1458, ../sass/_screen.scss */
+  .question-content .cosmetic {
+    bottom: -100px;
+  }
+  /* line 1461, ../sass/_screen.scss */
+  .question-content .cosmetic img {
+    width: 70%;
+  }
+  /* line 1464, ../sass/_screen.scss */
+  .question-content .cosmetic2 {
+    bottom: -75px;
+  }
+  /* line 1467, ../sass/_screen.scss */
+  .question-content .cosmetic2 img {
+    width: 80%;
+  }
+  /* line 1470, ../sass/_screen.scss */
+  .question-content .book-corner {
+    top: -80px;
+  }
+  /* line 1473, ../sass/_screen.scss */
+  .question-content .model {
+    height: 720px;
+    right: -130px;
+    overflow: hidden;
+  }
+  /* line 1478, ../sass/_screen.scss */
+  .question-content .model img {
+    width: 80%;
+  }
+  /* line 1481, ../sass/_screen.scss */
+  .question-content .photo img {
+    width: 30%;
+  }
+  /* line 1484, ../sass/_screen.scss */
+  .question-content .form-slide {
+    top: 140px;
+  }
+
+  /* line 1488, ../sass/_screen.scss */
+  .question-end {
+    top: 140px;
+  }
+  /* line 1490, ../sass/_screen.scss */
+  .question-end p {
+    font-size: 22px;
+  }
+  /* line 1493, ../sass/_screen.scss */
+  .question-end span {
+    padding-bottom: 40px;
+  }
+  /* line 1496, ../sass/_screen.scss */
+  .question-end span a {
+    padding-top: 8px;
+    font-size: 38px;
+  }
+
+  /*home-selling*/
+  /* line 1506, ../sass/_screen.scss */
+  .selling-main ul.content .layer .left-ribbon {
+    top: 496px;
+    left: -100px;
+  }
+  /* line 1510, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-epo1 {
+    top: 369px;
+    left: 167px;
+  }
+  /* line 1514, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-epo1 {
+    top: 296px;
+    left: 126px;
+  }
+  /* line 1518, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-skincare1 {
+    top: 192px;
+    left: 184px;
+  }
+  /* line 1522, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-skincare1 {
+    top: 99px;
+    left: 150px;
+  }
+  /* line 1526, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-whitening {
+    top: 120px;
+    left: 350px;
+  }
+  /* line 1530, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-whitening {
+    top: 55px;
+    left: 310px;
+  }
+  /* line 1534, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-skincare2 {
+    top: 400px;
+    left: 442px;
+  }
+  /* line 1538, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-skincare2 {
+    top: 298px;
+    left: 352px;
+  }
+  /* line 1542, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-epo2 {
+    top: 176px;
+    left: 450px;
+  }
+  /* line 1546, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-epo2 {
+    top: 87px;
+    left: 400px;
+  }
+  /* line 1550, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-skincare3 {
+    top: 270px;
+    left: 672px;
+  }
+  /* line 1554, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-skincare3 {
+    top: 180px;
+    left: 640px;
+  }
+  /* line 1558, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-acne1 {
+    top: 152px;
+    left: 860px;
+  }
+  /* line 1562, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-acne1 {
+    top: 30px;
+    left: 802px;
+  }
+  /* line 1566, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-water {
+    top: 290px;
+    left: 783px;
+  }
+  .selling-main ul.content .layer .product-plant {
+    top: 290px;
+    left: 783px;
+  }
+  /* line 1570, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-water {
+    top: 211px;
+    left: 751px;
+  }
+  /* line 1570, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-plant {
+    top: 211px;
+    left: 751px;
+  }
+  /* line 1574, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-marigold {
+    top: 201px;
+    left: 1046px;
+  }
+  /* line 1578, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-marigold {
+    top: 125px;
+    left: 1005px;
+  }
+  /* line 1582, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-acne2 {
+    top: 308px;
+    left: 932px;
+  }
+  /* line 1586, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-acne2 {
+    top: 234px;
+    left: 920px;
+  }
+  /* line 1590, ../sass/_screen.scss */
+  .selling-main ul.content .layer .right-ribbon {
+    top: 496px;
+    left: 1170px;
+  }
+  /* line 1594, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-fantasia {
+    top: 224px;
+    left: 1134px;
+  }
+  /* line 1598, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-fantasia {
+    top: 122px;
+    left: 1098px;
+  }
+
+  /* line 1605, ../sass/_screen.scss */
+  .selling-desk {
+    height: 276px;
+    margin-top: -120px;
+  }
+
+  /* line 1610, ../sass/_screen.scss */
+  .selling-main {
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#fafafa), to(rgba(255, 1, 136, 0))), -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#a6a6a6));
+    *background: url(../images/spa/selling/1366/selling_bg.jpg) top center no-repeat #EBEBEB;
+    background: url(../images/spa/selling/selling_bg.jpg) top center no-repeat #EBEBEB\0;
+  }
+  /* line 1615, ../sass/_screen.scss */
+  .selling-main .ribbon {
+    background: url(../images/spa/selling/1366/ribbon.png) no-repeat;
+  }
+  /* line 1618, ../sass/_screen.scss */
+  .selling-main .product-epo1 {
+    background: url(../images/spa/selling/1366/product_epo1.png) no-repeat;
+  }
+  /* line 1621, ../sass/_screen.scss */
+  .selling-main .product-skincare1 {
+    background: url(../images/spa/selling/1366/product_skincare1.png) no-repeat;
+  }
+  /* line 1624, ../sass/_screen.scss */
+  .selling-main .product-whitening {
+    background: url(../images/spa/selling/1366/product_whitening.png) no-repeat;
+  }
+  /* line 1627, ../sass/_screen.scss */
+  .selling-main .product-skincare2 {
+    background: url(../images/spa/selling/1366/product_skincare2.png) no-repeat;
+  }
+  /* line 1630, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-epo2 {
+    background: url(../images/spa/selling/1366/product_epo2.png) no-repeat;
+    top: 176px;
+    left: 466px;
+  }
+  /* line 1635, ../sass/_screen.scss */
+  .selling-main .product-skincare3 {
+    background: url(../images/spa/selling/1366/product_skincare3.png) no-repeat;
+  }
+  /* line 1638, ../sass/_screen.scss */
+  .selling-main .product-water {
+    background: url(../images/spa/selling/1366/product_water.png) no-repeat;
+  }
+  /* line 1641, ../sass/_screen.scss */
+  .selling-main .product-acne1 {
+    background: url(../images/spa/selling/1366/product_acne1.png) no-repeat;
+  }
+  /* line 1644, ../sass/_screen.scss */
+  .selling-main .product-acne2 {
+    background: url(../images/spa/selling/1366/product_acne2.png) no-repeat;
+  }
+  /* line 1647, ../sass/_screen.scss */
+  .selling-main .product-marigold {
+    background: url(../images/spa/selling/1366/product_marigold.png) no-repeat;
+  }
+  /* line 1650, ../sass/_screen.scss */
+  .selling-main .product-fantasia {
+    background: url(../images/spa/selling/1366/product_fantasia.png) no-repeat;
+  }
+  /* line 1653, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-whitening {
+    background: url(../images/spa/selling/1366/light_whitening.png) no-repeat;
+    top: 55px;
+    left: 310px;
+  }
+  /* line 1658, ../sass/_screen.scss */
+  .selling-main .light-skincare1 {
+    background: url(../images/spa/selling/1366/light_skincare1.png) no-repeat;
+  }
+  /* line 1661, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-epo1 {
+    background: url(../images/spa/selling/1366/light_epo1.png) no-repeat;
+    top: 296px;
+    left: 126px;
+  }
+  /* line 1666, ../sass/_screen.scss */
+  .selling-main .light-epo2 {
+    background: url(../images/spa/selling/1366/light_epo2.png) no-repeat;
+  }
+  /* line 1669, ../sass/_screen.scss */
+  .selling-main .light-skincare2 ul.content .layer {
+    background: url(../images/spa/selling/1366/light_skincare2.png) no-repeat;
+    top: 298px;
+    left: 352;
+  }
+  /* line 1674, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-skincare3 {
+    background: url(../images/spa/selling/1366/light_skincare3.png) no-repeat;
+    top: 180px;
+    left: 640px;
+  }
+  /* line 1679, ../sass/_screen.scss */
+  .selling-main .light-water {
+    background: url(../images/spa/selling/1366/light_water.png) no-repeat;
+  }
+  /* line 1682, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-acne1 {
+    background: url(../images/spa/selling/1366/light_acne1.png) no-repeat !important;
+  }
+  /* line 1685, ../sass/_screen.scss */
+  .selling-main .light-acne2 {
+    background: url(../images/spa/selling/1366/light_acne2.png) no-repeat;
+  }
+  /* line 1688, ../sass/_screen.scss */
+  .selling-main .light-marigold {
+    background: url(../images/spa/selling/1366/light_marigold.png) no-repeat;
+  }
+  /* line 1691, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-fantasia {
+    background: url(../images/spa/selling/1366/light_fantasia.png) no-repeat;
+    left: 1098px;
+  }
+
+  /* line 1698, ../sass/_screen.scss */
+  .selling-desk {
+    background: url(../images/spa/selling/1366/selling_desk_bg.jpg) center center no-repeat;
+  }
+
+  /* line 1702, ../sass/_screen.scss */
+  .selling-logo {
+    background: url(../images/spa/selling/1366/selling_logo.png) no-repeat;
+  }
+
+  /*snow*/
+  /* line 1708, ../sass/_screen.scss */
+  .snow-main .snow-content {
+    height: 1500px;
+    background-position: -200px 0;
+  }
+  /* line 1711, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-banner img {
+    width: 1366px;
+  }
+  /* line 1714, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font1 {
+    top: 44%;
+    left: 8%;
+  }
+  /* line 1718, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font1 img {
+    width: 500px;
+  }
+  /* line 1721, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font2 {
+    top: 56%;
+    left: 8%;
+  }
+  /* line 1725, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font2 img {
+    width: 500px;
+  }
+  /* line 1728, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font0 {
+    top: 41%;
+    right: 7%;
+  }
+  /* line 1732, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font0 img {
+    width: 500px;
+  }
+  /* line 1735, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font3 {
+    top: 65%;
+    right: 8%;
+  }
+  /* line 1739, ../sass/_screen.scss */
+  .snow-main .snow-content .snow-font3 img {
+    width: 500px;
+  }
+
+  /* line 1746, ../sass/_screen.scss */
+  .ideas-content {
+    width: 100%;
+    background-size: 100%;
+    height: 618px;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/spa/product_ideas.jpg', sizingMethod='scale');
+    *background: url(../images/spa/product_ideas_1440.jpg) no-repeat;
+    background: url(../images/spa/product_ideas_1440.jpg) no-repeat\0;
+  }
+  /* line 1756, ../sass/_screen.scss */
+  .ideas-content .ideas-title {
+    top: 20%;
+    left: 13%;
+    width: 550px;
+    height: 270px;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /*首页*/
+  /* line 1769, ../sass/_screen.scss */
+  .wrapper .landing-page {
+    height: 650px;
+  }
+  /* line 1771, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-logo {
+    top: 150px;
+  }
+  /* line 1774, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-down {
+    top: 500px;
+  }
+  /* line 1777, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-play {
+    top: 280px;
+  }
+  /* line 1780, ../sass/_screen.scss */
+  .wrapper .landing-page .landing-slogan {
+    top: 370px;
+  }
+  /* line 1786, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list a {
+    width: 100%;
+  }
+  /* line 1789, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-1 {
+    height: 400px;
+    background-position: center 30%;
+    background-size: 100%;
+  }
+  /* line 1793, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-1 .banner1-font {
+    width: 200px;
+    height: 120px;
+    top: 27%;
+    right: 23%;
+  }
+  /* line 1799, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-1 .banner1-animate {
+    width: 460px;
+    height: 400px;
+    left: 10%;
+  }
+  /* line 1807, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 {
+    height: 400px;
+  }
+  /* line 1809, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 .banner2-animate {
+    width: 390px;
+    height: 400px;
+  }
+  /* line 1813, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 .banner2-icon {
+    width: 130px;
+    height: 170px;
+    top: 22%;
+  }
+  /* line 1818, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-2 .banner2-font {
+    width: 360px;
+    height: 190px;
+  }
+  /* line 1823, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 {
+    height: 400px;
+  }
+  /* line 1825, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 .banner3-animate {
+    width: 500px;
+    height: 400px;
+    left: 9%;
+  }
+  /* line 1830, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 .banner3-product {
+    width: 140px;
+    height: 110px;
+    right: 22%;
+    top: 33%;
+  }
+  /* line 1836, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-3 .banner3-font {
+    width: 210px;
+    height: 45px;
+    right: 16%;
+    top: 22%;
+  }
+  /* line 1843, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 {
+    height: 400px;
+  }
+  /* line 1845, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 .banner4-product {
+    height: 400px;
+  }
+  /* line 1848, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 .banner4-icon {
+    width: 400px;
+  }
+  /* line 1851, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list .banner-bg-4 .banner4-font {
+    width: 290px;
+    height: 230px;
+    top: 6%;
+  }
+  /* line 1859, ../sass/_screen.scss */
+  .wrapper .shade-videobg {
+    height: 650px;
+  }
+  /* line 1862, ../sass/_screen.scss */
+  .wrapper .home-banner {
+    height: 400px;
+  }
+  /* line 1864, ../sass/_screen.scss */
+  .wrapper .home-banner .slide-wrapper {
+    height: 400px;
+  }
+  /* line 1867, ../sass/_screen.scss */
+  .wrapper .home-banner .slider-list {
+    height: 500px;
+  }
+  /* line 1870, ../sass/_screen.scss */
+  .wrapper .home-banner .banner-tabs {
+    width: 852px;
+    left: 50%;
+    margin-left: -421px;
+    bottom: 3%;
+  }
+  /* line 1876, ../sass/_screen.scss */
+  .wrapper .home-banner .banner-tabs li {
+    width: 210px;
+    height: 80px;
+    padding-top: 32px;
+  }
+  /* line 1881, ../sass/_screen.scss */
+  .wrapper .home-banner .banner-tabs .large-font {
+    padding-top: 25px;
+  }
+  /* line 1885, ../sass/_screen.scss */
+  .wrapper .home-column .content {
+    padding: 40px 0px 35px 53px;
+    width: 100%;
+  }
+  /* line 1888, ../sass/_screen.scss */
+  .wrapper .home-column .content .bottom-title-1 {
+    left: 70px;
+  }
+  /* line 1891, ../sass/_screen.scss */
+  .wrapper .home-column .content .bottom-title-2 {
+    left: 370px;
+  }
+  /* line 1894, ../sass/_screen.scss */
+  .wrapper .home-column .content .bottom-title-3 {
+    left: 670px;
+  }
+  /* line 1897, ../sass/_screen.scss */
+  .wrapper .home-column .content a {
+    width: 260px;
+    height: 150px;
+  }
+  /* line 1900, ../sass/_screen.scss */
+  .wrapper .home-column .content a img {
+    width: 260px;
+    height: 150px;
+  }
+  /* line 1904, ../sass/_screen.scss */
+  .wrapper .home-column .content a .play {
+    width: 66px;
+    height: 68px;
+  }
+  /* line 1908, ../sass/_screen.scss */
+  .wrapper .home-column .content a .play-font {
+    left: 29%;
+    top: 61%;
+    width: 124px;
+    height: 37px;
+  }
+  /* line 1914, ../sass/_screen.scss */
+  .wrapper .home-column .content a .pic1-font {
+    width: 95px;
+    height: 40px;
+  }
+  /* line 1918, ../sass/_screen.scss */
+  .wrapper .home-column .content a .pic2-font {
+    width: 120px;
+    height: 60px;
+  }
+
+  /*走进克丽缇娜*/
+  /* line 1927, ../sass/_screen.scss */
+  .about-columnList {
+    background-size: 100%;
+    height: 300px;
+  }
+  /* line 1930, ../sass/_screen.scss */
+  .about-columnList .intro-left {
+    top: 10%;
+  }
+  /* line 1933, ../sass/_screen.scss */
+  .about-columnList .intro-right {
+    top: 10%;
+  }
+
+  /*品牌故事*/
+  /* line 1938, ../sass/_screen.scss */
+  .family-brand {
+    background-size: 100%;
+    height: 480px;
+  }
+  /* line 1941, ../sass/_screen.scss */
+  .family-brand .slogan-brand {
+    padding-top: 120px;
+  }
+  /* line 1944, ../sass/_screen.scss */
+  .family-brand .down-brand {
+    bottom: 15%;
+  }
+
+  /* line 1948, ../sass/_screen.scss */
+  .main-brand {
+    width: 1250px;
+  }
+  /* line 1950, ../sass/_screen.scss */
+  .main-brand .epo {
+    left: 40%;
+  }
+  /* line 1953, ../sass/_screen.scss */
+  .main-brand .pic-dr2 {
+    left: 20%;
+  }
+  /* line 1956, ../sass/_screen.scss */
+  .main-brand .concept-brand {
+    left: 4%;
+  }
+
+  /* line 1961, ../sass/_screen.scss */
+  .spirit-brand .spirit-brand-left {
+    left: 3px;
+  }
+  /* line 1964, ../sass/_screen.scss */
+  .spirit-brand .spirit-brand-right {
+    right: -170px;
+  }
+  /* line 1967, ../sass/_screen.scss */
+  .spirit-brand .video {
+    left: 17%;
+  }
+
+  /* line 1971, ../sass/_screen.scss */
+  .video-brand {
+    height: 468px;
+  }
+  /* line 1973, ../sass/_screen.scss */
+  .video-brand .video-title {
+    top: 40px;
+    left: 0;
+  }
+
+  /* line 1978, ../sass/_screen.scss */
+  .right-nav {
+    display: none;
+  }
+
+  /*公司简介*/
+  /* line 1982, ../sass/_screen.scss */
+  .about-content {
+    min-height: 300px;
+  }
+
+  /* line 1985, ../sass/_screen.scss 
+  .profile-wrapper {
+    background-size: 120%;
+    height: 320px;
+  }*/
+  /* line 1988, ../sass/_screen.scss */
+  .profile-wrapper .intro-profile {
+    right: 150px;
+    top: 150px;
+  }
+  /* line 1992, ../sass/_screen.scss */
+  .profile-wrapper .summary-profile {
+    margin-top: 0;
+    font-size: 12px;
+  }
+
+  /* line 1999, ../sass/_screen.scss */
+  .milestone .milestone-2003 {
+    left: 0;
+  }
+  /* line 2002, ../sass/_screen.scss */
+  .milestone .milestone-two-2003 {
+    right: 150px;
+  }
+  /* line 2006, ../sass/_screen.scss */
+  .milestone .milestone-2014 .text-2014 {
+    left: 55%;
+  }
+
+  /* line 2012, ../sass/_screen.scss */
+  .newslist-main .newslist-list, .responsibility-main .responsibility-list {
+    width: 780px;
+  }
+
+  /* line 2015, ../sass/_screen.scss */
+  .article-detail {
+    width: 100%;
+  }
+  /* line 2017, ../sass/_screen.scss */
+  .article-detail .article-content {
+    width: 100%;
+  }
+
+  /* line 2022, ../sass/_screen.scss */
+  .honor-content {
+    width: 1000px;
+    padding-top: 120px;
+  }
+  /* line 2025, ../sass/_screen.scss */
+  .honor-content .honor-list-wrapper {
+    width: 900px;
+  }
+  /* line 2028, ../sass/_screen.scss */
+  .honor-content .honor-img-list {
+    width: 170px;
+  }
+  /* line 2031, ../sass/_screen.scss */
+  .honor-content .left-arrow {
+    left: -40px;
+  }
+  /* line 2034, ../sass/_screen.scss */
+  .honor-content .right-arrow {
+    right: -40px;
+  }
+
+  /* line 2039, ../sass/_screen.scss */
+  .video-list-wrapper {
+    width: 680px;
+  }
+  /* line 2041, ../sass/_screen.scss */
+  .video-list-wrapper .video-list {
+    width: 760px;
+  }
+
+  /*居家护理*/
+  /* line 2046, ../sass/_screen.scss */
+  .home-spa .sub-content, .home-profession .sub-content {
+    width: 1000px;
+  }
+
+  /* line 2049, ../sass/_screen.scss */
+  .home-profession .slide-wrapper .profession-spa-slide .slide-list {
+    width: 200px;
+  }
+
+  /* line 2052, ../sass/_screen.scss */
+  .home-spa .profession-spa-tabs .home-spa-list, .home-profession .profession-spa-tabs .home-spa-list {
+    margin-left: 100px;
+    margin-right: 90px;
+  }
+
+  /* line 2056, ../sass/_screen.scss */
+  .about-sub-menu .sub-content ul li {
+    width: 145px;
+  }
+
+  /* line 2059, ../sass/_screen.scss */
+  .hg-content .hg-banner {
+    background-size: 100%;
+    height: 100%;
+    min-height: 470px;
+  }
+
+  /* line 2064, ../sass/_screen.scss */
+  .hg-nav li a {
+    margin: 0px 8px 0px 8px !important;
+  }
+
+  /* line 2067, ../sass/_screen.scss */
+  .hg-banner .pro-slogan {
+    left: 5% !important;
+  }
+
+  /* line 2071, ../sass/_screen.scss */
+  .hg-content .hg-prolist-con {
+    width: 1000px;
+  }
+  /* line 2073, ../sass/_screen.scss */
+  .hg-content .hg-prolist-con .pro-li {
+    width: 440px;
+  }
+  /* line 2076, ../sass/_screen.scss */
+  .hg-content .hg-prolist-con .txtArea {
+    margin-left: 0px;
+  }
+  /* line 2079, ../sass/_screen.scss */
+  .hg-content .hg-prolist-con .three-row {
+    width: 290px;
+  }
+  /* line 2084, ../sass/_screen.scss */
+  .hg-content .epo-listbg .picArea img {
+    width: 130px;
+  }
+  /* line 2089, ../sass/_screen.scss */
+  .hg-content .sunscreen-listbg .pro-li .txtArea {
+    margin-left: 20px;
+  }
+  /* line 2094, ../sass/_screen.scss */
+  .hg-content .skincare-listbg .two-row {
+    padding-left: 0;
+  }
+  /* line 2097, ../sass/_screen.scss */
+  .hg-content .skincare-listbg .picArea {
+    margin-left: 0;
+  }
+  /* line 2100, ../sass/_screen.scss */
+  .hg-content .skincare-listbg .pro-li .txtArea {
+    margin-left: 0;
+  }
+  /* line 2105, ../sass/_screen.scss */
+  .hg-content .classic-listbg .two-row {
+    padding-left: 0;
+  }
+  /* line 2108, ../sass/_screen.scss */
+  .hg-content .classic-listbg .picArea {
+    margin-left: 0;
+  }
+  /* line 2111, ../sass/_screen.scss */
+  .hg-content .classic-listbg .pro-li .txtArea {
+    margin-left: 0;
+  }
+  /* line 2114, ../sass/_screen.scss */
+  .hg-content .classic-listbg .one-row {
+    width: 100%;
+  }
+  /* line 2117, ../sass/_screen.scss */
+  .hg-content .classic-listbg .two-row .txtArea {
+    width: 100px;
+  }
+  /* line 2122, ../sass/_screen.scss */
+  .hg-content .acne-listbg .pro-li .txtArea {
+    margin-left: 20px;
+  }
+  /* line 2127, ../sass/_screen.scss */
+  .hg-content .oil-listbg .pro-li .txtArea {
+    width: 180px;
+  }
+  /* line 2132, ../sass/_screen.scss */
+  .hg-content .compact-listbg .pro-li {
+    width: 100%;
+  }
+  /* line 2137, ../sass/_screen.scss */
+  .hg-content .other-listbg .one-row {
+    width: 90%;
+  }
+  /* line 2144, ../sass/_screen.scss */
+  .hg-content .other-listbg .picArea img {
+    width: 80% !important;
+  }
+
+  /* line 2150, ../sass/_screen.scss */
+  .product-detail-content {
+    height: 600px;
+  }
+.wrapper .plant-detail-content{ height:746px;}
+  /* line 2154, ../sass/_screen.scss */
+  .product-slide-wrapper .slider-arrow .left-arrow {
+    left: -10%;
+  }
+  /* line 2157, ../sass/_screen.scss */
+  .product-slide-wrapper .slider-arrow .right-arrow {
+    right: -10%;
+  }
+
+  /*专业护理*/
+  /* line 2162, ../sass/_screen.scss */
+  .body-nav li a {
+    margin: 0 15px 0 15px;
+  }
+
+  /* line 2165, ../sass/_screen.scss */
+  .other-spa {
+    display: none;
+  }
+
+  /* line 2169, ../sass/_screen.scss */
+  .spa-content .courses-list {
+    background-size: 100%;
+    height: 100%;
+    min-height: 300px;
+  }
+  /* line 2174, ../sass/_screen.scss */
+  .spa-content .content {
+    top: 0px;
+  }
+  /* line 2177, ../sass/_screen.scss */
+  .spa-content .content-right {
+    top: 0px;
+  }
+  /* line 2180, ../sass/_screen.scss */
+  .spa-content .pro-banner {
+    background-size: 100%;
+    height: 100%;
+    min-height: 450px;
+  }
+  /* line 2185, ../sass/_screen.scss */
+  .spa-content .pro-banner .pro-slogan {
+    top: 35%;
+    left: 40px !important;
+  }
+  /* line 2189, ../sass/_screen.scss */
+  .spa-content .charm-spa .charm-spa-wrapper {
+    left: -50px;
+  }
+  /* line 2193, ../sass/_screen.scss */
+  .spa-content .match-introduce .summary {
+    margin-right: 100px;
+  }
+  /* line 2196, ../sass/_screen.scss */
+  .spa-content .contour-spa .contour-spa-wrapper {
+    left: -170px;
+  }
+  /* line 2199, ../sass/_screen.scss */
+  .spa-content .carving-hp-intro .text {
+    margin-right: 85px;
+  }
+  /* line 2202, ../sass/_screen.scss */
+  .spa-content .whiten-flower {
+    left: -410px;
+  }
+  /* line 2205, ../sass/_screen.scss */
+  .spa-content .hp-intro {
+    padding-right: 80px;
+  }
+  /* line 2208, ../sass/_screen.scss */
+  .spa-content .roses-hp-intro .text {
+    margin-right: 90px;
+  }
+  /* line 2211, ../sass/_screen.scss */
+  .spa-content .active-spa .active-product {
+    left: -50px;
+  }
+
+  /* line 2215, ../sass/_screen.scss */
+  .star-nav li a {
+    margin: 0px 20px 0px 20px;
+  }
+
+  /*home-selling*/
+  /* line 2221, ../sass/_screen.scss */
+  .selling-main ul.content .layer {
+    left: -300px;
+  }
+
+  /* line 2227, ../sass/_screen.scss */
+  .snow-font1, .snow-font2 {
+    left: 0;
+  }
+
+  /* line 2230, ../sass/_screen.scss */
+  .snow-font3, .snow-font0 {
+    right: 0;
+  }
+
+  /* line 2233, ../sass/_screen.scss */
+  .snow-banner1 {
+    background-position: top center;
+    background-size: 160%;
+  }
+
+  /* line 2237, ../sass/_screen.scss */
+  .left-protein, .left-protein img {
+    width: 480px;
+  }
+
+  /* line 2240, ../sass/_screen.scss */
+  .right-protein, .right-protein img {
+    width: 480px;
+    margin-right: 20px;
+    float: left;
+  }
+
+  /* line 2246, ../sass/_screen.scss */
+  .snow-font1 {
+    top: 35%;
+  }
+
+  /* line 2249, ../sass/_screen.scss */
+  .snow-font0 {
+    top: 42%;
+  }
+
+  /* line 2252, ../sass/_screen.scss */
+  .snow-font3 {
+    top: 76%;
+  }
+
+  /* line 2257, ../sass/_screen.scss */
+  .join-content .main-content {
+    width: 1000px;
+  }
+  /* line 2259, ../sass/_screen.scss */
+  .join-content .main-content .brand-intro .brand-title {
+    right: 10%;
+  }
+  /* line 2262, ../sass/_screen.scss */
+  .join-content .main-content .brand-intro .brand-content {
+    right: 22%;
+  }
+  /* line 2265, ../sass/_screen.scss */
+  .join-content .main-content .product-intro .product-option img {
+    margin-right: 0;
+  }
+  /* line 2268, ../sass/_screen.scss */
+  .join-content .main-content .research-intro p {
+    background-size: 100%;
+  }
+  /* line 2271, ../sass/_screen.scss */
+  .join-content .main-content .training-intro img {
+    width: 100%;
+  }
+  /* line 2274, ../sass/_screen.scss */
+  .join-content .main-content .video-intro .video-bg {
+    background-size: 100%;
+  }
+  /* line 2277, ../sass/_screen.scss */
+  .join-content .main-content .experience-intro p {
+    background-size: 100%;
+  }
+  /* line 2280, ../sass/_screen.scss */
+  .join-content .main-content .support-intro p, .join-content .main-content .technology-intro p, .join-content .main-content .active-intro p, .join-content .main-content .team-intro p, .join-content .main-content .ad-intro p {
+    background-size: 100%;
+  }
+  /* line 2283, ../sass/_screen.scss */
+  .join-content .main-content .ad-intro .ad-detail-intro img {
+    width: 100%;
+  }
+  /* line 2287, ../sass/_screen.scss */
+  .join-content .partner-content {
+    width: 1000px;
+  }
+  /* line 2290, ../sass/_screen.scss */
+  .join-content .partner-content .people-intro .intro p {
+    width: 970px;
+  }
+
+  /* line 2294, ../sass/_screen.scss */
+  .biotta-wrapper .biotta-content {
+    margin-left: 8%;
+  }
+
+  /*home-selling*/
+  /* line 2302, ../sass/_screen.scss */
+  .selling-main ul.content .layer .left-ribbon {
+    top: 496px;
+    left: -100px;
+  }
+  /* line 2306, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-epo1 {
+    top: 369px;
+    left: 8px;
+  }
+  /* line 2310, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-epo1 {
+    top: 296px;
+    left: 8px;
+  }
+  /* line 2314, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-skincare1 {
+    top: 192px;
+    left: 18px;
+  }
+  /* line 2318, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-skincare1 {
+    top: 99px;
+    left: 18px;
+  }
+  /* line 2322, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-whitening {
+    top: 120px;
+    left: 160px;
+  }
+  /* line 2326, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-whitening {
+    top: 55px;
+    left: 160px;
+  }
+  /* line 2330, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-skincare2 {
+    top: 400px;
+    left: 250px;
+  }
+  /* line 2334, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-skincare2 {
+    top: 298px;
+    left: 250px;
+  }
+  /* line 2338, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-epo2 {
+    top: 176px;
+    left: 277px !important;
+  }
+  /* line 2342, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-epo2 {
+    top: 87px;
+    left: 277px;
+  }
+  /* line 2346, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-skincare3 {
+    top: 270px;
+    left: 450px;
+  }
+  /* line 2350, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-skincare3 {
+    top: 180px;
+    left: 450px;
+  }
+  /* line 2354, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-acne1 {
+    top: 152px;
+    left: 630px;
+  }
+  /* line 2358, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-acne1 {
+    top: 30px;
+    left: 630px;
+  }
+  /* line 2362, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-water {
+    top: 290px;
+    left: 555px;
+  }
+  /* line 2366, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-water {
+    top: 211px;
+    left: 555px;
+  }
+  /* line 2362, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-plant {
+    top: 290px;
+    left: 555px;
+  }
+  /* line 2366, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-plant {
+    top: 211px;
+    left: 555px;
+  }
+  /* line 2370, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-marigold {
+    top: 201px;
+    left: 825px;
+  }
+  /* line 2374, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-marigold {
+    top: 125px;
+    left: 825px;
+  }
+  /* line 2378, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-acne2 {
+    top: 308px;
+    left: 710px;
+  }
+  /* line 2382, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-acne2 {
+    top: 234px;
+    left: 710px;
+  }
+  /* line 2386, ../sass/_screen.scss */
+  .selling-main ul.content .layer .right-ribbon {
+    top: 496px;
+    left: 1170px;
+  }
+  /* line 2390, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-fantasia {
+    top: 224px;
+    left: 900px;
+  }
+  /* line 2394, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-fantasia {
+    top: 122px;
+    left: 900px;
+  }
+
+  /* line 2401, ../sass/_screen.scss */
+  .selling-desk {
+    height: 276px;
+    margin-top: -120px;
+  }
+
+  /* line 2406, ../sass/_screen.scss */
+  .selling-main {
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#fafafa), to(rgba(255, 1, 136, 0))), -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#a6a6a6));
+    *background: url(../images/spa/selling/1366/selling_bg.jpg) top center no-repeat #EBEBEB;
+    background: url(../images/spa/selling/selling_bg.jpg) top center no-repeat #EBEBEB\0;
+  }
+  /* line 2411, ../sass/_screen.scss */
+  .selling-main .ribbon {
+    background: url(../images/spa/selling/1366/ribbon.png) no-repeat;
+  }
+  /* line 2414, ../sass/_screen.scss */
+  .selling-main .product-epo1 {
+    background: url(../images/spa/selling/1366/product_epo1.png) no-repeat;
+  }
+  /* line 2417, ../sass/_screen.scss */
+  .selling-main .product-skincare1 {
+    background: url(../images/spa/selling/1366/product_skincare1.png) no-repeat;
+  }
+  /* line 2420, ../sass/_screen.scss */
+  .selling-main .product-whitening {
+    background: url(../images/spa/selling/1366/product_whitening.png) no-repeat;
+  }
+  /* line 2423, ../sass/_screen.scss */
+  .selling-main .product-skincare2 {
+    background: url(../images/spa/selling/1366/product_skincare2.png) no-repeat;
+  }
+  /* line 2426, ../sass/_screen.scss */
+  .selling-main ul.content .layer .product-epo2 {
+    background: url(../images/spa/selling/1366/product_epo2.png) no-repeat;
+    top: 176px;
+    left: 466px;
+  }
+  /* line 2431, ../sass/_screen.scss */
+  .selling-main .product-skincare3 {
+    background: url(../images/spa/selling/1366/product_skincare3.png) no-repeat;
+  }
+  /* line 2434, ../sass/_screen.scss */
+  .selling-main .product-water {
+    background: url(../images/spa/selling/1366/product_water.png) no-repeat;
+  }
+  /* line 2437, ../sass/_screen.scss */
+  .selling-main .product-acne1 {
+    background: url(../images/spa/selling/1366/product_acne1.png) no-repeat;
+  }
+  /* line 2440, ../sass/_screen.scss */
+  .selling-main .product-acne2 {
+    background: url(../images/spa/selling/1366/product_acne2.png) no-repeat;
+  }
+  /* line 2443, ../sass/_screen.scss */
+  .selling-main .product-marigold {
+    background: url(../images/spa/selling/1366/product_marigold.png) no-repeat;
+  }
+  /* line 2446, ../sass/_screen.scss */
+  .selling-main .product-fantasia {
+    background: url(../images/spa/selling/1366/product_fantasia.png) no-repeat;
+  }
+  /* line 2449, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-whitening {
+    background: url(../images/spa/selling/1366/light_whitening.png) no-repeat;
+    top: 55px;
+    left: 310px;
+  }
+  /* line 2454, ../sass/_screen.scss */
+  .selling-main .light-skincare1 {
+    background: url(../images/spa/selling/1366/light_skincare1.png) no-repeat;
+  }
+  /* line 2457, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-epo1 {
+    background: url(../images/spa/selling/1366/light_epo1.png) no-repeat;
+    top: 296px;
+    left: 126px;
+  }
+  /* line 2462, ../sass/_screen.scss */
+  .selling-main .light-epo2 {
+    background: url(../images/spa/selling/1366/light_epo2.png) no-repeat;
+  }
+  /* line 2465, ../sass/_screen.scss */
+  .selling-main .light-skincare2 ul.content .layer {
+    background: url(../images/spa/selling/1366/light_skincare2.png) no-repeat;
+    top: 298px;
+    left: 352;
+  }
+  /* line 2470, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-skincare3 {
+    background: url(../images/spa/selling/1366/light_skincare3.png) no-repeat;
+    top: 180px;
+    left: 640px;
+  }
+  /* line 2475, ../sass/_screen.scss */
+  .selling-main .light-water {
+    background: url(../images/spa/selling/1366/light_water.png) no-repeat;
+  }
+  /* line 2478, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-acne1 {
+    background: url(../images/spa/selling/1366/light_acne1.png) no-repeat !important;
+  }
+  /* line 2481, ../sass/_screen.scss */
+  .selling-main .light-acne2 {
+    background: url(../images/spa/selling/1366/light_acne2.png) no-repeat;
+  }
+  /* line 2484, ../sass/_screen.scss */
+  .selling-main .light-marigold {
+    background: url(../images/spa/selling/1366/light_marigold.png) no-repeat;
+  }
+  /* line 2487, ../sass/_screen.scss */
+  .selling-main ul.content .layer .light-fantasia {
+    background: url(../images/spa/selling/1366/light_fantasia.png) no-repeat;
+    left: 1098px;
+  }
+
+  /* line 2494, ../sass/_screen.scss */
+  .selling-desk {
+    background: url(../images/spa/selling/1366/selling_desk_bg.jpg) center center no-repeat;
+  }
+
+  /* line 2498, ../sass/_screen.scss */
+  .selling-logo {
+    background: url(../images/spa/selling/1366/selling_logo.png) no-repeat;
+  }
+
+  /* line 2503, ../sass/_screen.scss */
+  .culture-content-list .list-con-7 {
+    right: 190px;
+  }
+
+  /* line 2506, ../sass/_screen.scss */
+  .culture-content-list .list-con-9 {
+    right: 190px;
+  }
+
+  /* line 2509, ../sass/_screen.scss */
+  .culture-content-list .list-con-11 {
+    right: 190px;
+  }
+
+  /* line 2512, ../sass/_screen.scss */
+  .culture-content-list .list-con-3 {
+    right: 210px;
+  }
+
+  /* line 2515, ../sass/_screen.scss */
+  .culture-content-list h1.principle {
+    left: 430px;
+  }
+
+  /* line 2518, ../sass/_screen.scss */
+  .culture-content-list h1.creed {
+    left: 430px;
+  }
+
+  /* line 2522, ../sass/_screen.scss */
+  .footer .content {
+    width: 900px;
+  }
+
+  /* line 2526, ../sass/_screen.scss */
+  .hero-content {
+    width: 774px;
+    text-align: center;
+  }
+  /* line 2529, ../sass/_screen.scss */
+  .hero-content .hero-items-one, .hero-content .hero-items-three {
+    margin-left: 20%;
+  }
+  /* line 2532, ../sass/_screen.scss */
+  .hero-content .hero-items-two, .hero-content .hero-items-four {
+    margin-right: 20%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  /* line 2543, ../sass/_screen.scss */
+  .bg .error {
+    width: 500px;
+  }
+  /* line 2545, ../sass/_screen.scss */
+  .bg .error img {
+    width: 100%;
+  }
+
+  /* line 2549, ../sass/_screen.scss */
+  .bg .error-text {
+    font-size: 16px;
+  }
+}
