@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常见问题修改</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/content.css" />
+<link href="css/addproduct.css" type="text/css" rel="stylesheet" />
+</head>
+<body marginwidth="0" marginheight="0">
+    <div class="container">
+        <div class="public-nav">您当前的位置：<a href="main.html">管理首页</a>></div>
+        <div class="public-content">
+            <div class="public-content-header">
+                <h3>修改常见问题</h3>
+            </div>
+            
+<div class="main-wrap">
+
+        
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="/jscss/admin/design/add" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                          <tr>
+                                <th><i class="require-red">*</i>标题：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="title" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>关键字：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="title" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                           <tr>
+                                <th><i class="require-red">*</i>内容：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="title" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th>上传图片：</th>
+                                <td><input name="smallimg" id="" type="file"><!--<input type="submit" onclick="submitForm('/jscss/admin/design/upload')" value="上传图片"/>--></td>
+                            </tr>
+                            <tr>
+                                <th>备注：</th>
+                                <td><textarea name="content" class="common-textarea" id="content" cols="30" style="width: 98%;" rows="10"></textarea></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    
+
+
+
+                                   
+                                    
+                                    <input type="submit" onclick="tianjia()" class="sub-btn" value="提  交" />
+                    <script>
+                        function tianjia(){
+                              alert("修改成功！");
+                         }
+                    </script>
+                    <input type="reset" class="sub-btn" value="重  置" />
+                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+             
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+</body>
+</html>
