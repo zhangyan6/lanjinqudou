@@ -1,0 +1,5 @@
+Inoherb_Config = {
+    api_prefix:"//api.inoherb.com",
+    www_prefix:"//www.inoherb.com",
+    shop_prefix:"//shop.inoherb.com"
+}
