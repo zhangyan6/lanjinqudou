@@ -13,11 +13,11 @@ $(function() {
 			if(key<0){
 				key=0
 			}
-			if(key>6){
-				key=6
+			if(key>5){
+				key=5
 			}
-			if(key==6){
-				$('.box').stop().animate({top:-840+'%'}, 700);//最后一屏高度只有40%；
+			if(key==5){
+				$('.box').stop().animate({top:-430+'%'}, 700);
 			}
 			else{
 				$('.box').stop().animate({top:-key*100+'%'}, 700);
@@ -31,7 +31,7 @@ $(function() {
 	})
 
 	//鼠标点击
-	var arr=['首页','经营项目','产品一览','治疗方案','案例',''];
+	var arr=['蓝金祛痘美肤堂','经营项目','产品一览','治疗方案','案例',''];
 	$('.nav li').bind({
 		mouseover:function(){
 			var tag=$('<span>'+arr[$(this).index()]+'</span>');
@@ -61,10 +61,6 @@ $(function() {
 		prev=key;//要消失的一屏
 	});
 
-	/*$('.menu li').eq(0).click(function(event) {
-		$('.low').toggleClass('comeout');
-	});*/
-	
 	//定义一个动画进入和消失的功能
 	function outIn(){
 		//进入一个，出去一个

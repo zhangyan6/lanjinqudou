@@ -149,7 +149,7 @@ body{
 .w980 h2{
 	position: absolute;
 	top:80px;
-	left: 140px;
+	left: 230px;
 	font-size: 36px;
 	color: #fff;
 	transition: all 1s linear 0s;
@@ -172,7 +172,7 @@ body{
 .w980 .intro{
 	position: absolute;
 	top: 180px;
-	left: 140px;
+	left: 280px;
 	line-height:30px;
 	color: #fff;
 	font-size: 14px;
@@ -250,31 +250,15 @@ body{
 }
 .w980 .photos{
 	position: absolute;
-	right: 120px;
-	bottom:120px;
+	right: 200px;
+	bottom:200px;
 	transition: all 1s linear 0s;
 }
 .page5 .photos:last-child{
 	right: 140px;
 	bottom:160px;
 }
-@keyframes scro{
-	0%{
-		transform: rotate(0deg);
-	}
 
-	100%{
-		transform: rotate(-360deg);
-	}
-}
-@-webkit-keyframes scro{
-	0%{
-		transform: rotate(0deg);
-	}
-	100%{
-		transform: rotate(-360deg);
-	}
-}
 .page2.comeout .photos{
 	right:0px;
 	opacity: 0;
@@ -296,19 +280,12 @@ body{
 }
 .page5 .apply{
 	color: #176502;
-}
-.page5 .apply span{	
-	background:#176502;	
-}
-.page5 .apply{
 	bottom: 140px;
 }
 .page5 .apply span{	
 	background:#176502;	
 }
-.page6 .photos{
-	right:100px;
-}
+
 .page1{
 	background:url(../images/page1-bg.jpg) no-repeat -50px bottom #0a1727 ;
 }
@@ -324,14 +301,14 @@ body{
 .page5{
 	background:url(../images/page5-bg.png) no-repeat center bottom;
 }
-.page10{
+.page6{
 	text-align: center;
 	background: #000;
 	line-height: 30px;
 	font-size: 14px;
 	overflow: hidden;
 }
-.page10 p{
+.page6 p{
 	margin-top: 40px;
 	text-align: center;
 	color: #fff;
