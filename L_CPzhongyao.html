@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link href="css/list.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container">
+		
+        <div class="JJ" >
+        	<h3>中药简介：</h3><!--方案介绍-->
+        	<hr></hr>
+            <div class="JJZ">
+                <p>了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏了达到更好的控夏</p>
+
+            </div>
+            <div class="JJY">
+        	   <img src="images/g-5.jpg" width="192px" height="160px">
+            </div>
+        </div> 
+       <br>
+        <div class="SY">
+        	<!--适用人群-->
+        	<hr></hr>
+        	   <div id="content">
+                    <a href="#"><img src="images/111.JPG"></a>
+                    <p>疗效：<br/>　　祛痘<br/>价格：<br/>　　XX元</p>
+                    <br/>
+                    <div class="name">名称：蓝金口服</div>
+                </div>
+                <div id="content">
+                    <a href="#"><img src="images/111.JPG"></a>
+                    <p>疗效：<br/>　　祛痘<br/>价格：<br/>　　XX元</p>
+                    <br/>
+                    <div class="name">名称：蓝金口服</div>
+                </div>
+        </div>
+        <br>
+        <br>
+        <div class="CP">
+        	<h3>介绍：</h3><!--产品介绍-->
+        	<hr></hr>
+        	<p>夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜</p>
+        </div>
+        
+	</div>
+	<!--轮播图-->
+	<script type="text/javascript">
+        /*图片滚动效果*/
+        var speedpic = 20;//速度数值越大速度越慢
+        document.getElementById("list2").innerHTML = document.getElementById("list1").innerHTML;
+        function Marqueepic() {
+            if (document.getElementById("list2").offsetWidth
+                    - document.getElementById("list").scrollLeft <= 0) {
+                document.getElementById("list").scrollLeft -= document
+                        .getElementById("list1").offsetWidth;
+            } else {
+                document.getElementById("list").scrollLeft++;
+            }
+        }
+        var MyMarpic = setInterval(Marqueepic, speedpic);
+
+        document.getElementById("list").onmouseover = function() {
+            clearInterval(MyMarpic);
+        }
+        document.getElementById("list").onmouseout = function() {
+            MyMarpic = setInterval(Marqueepic, speedpic);
+        }
+	</script>
+</body>
+</html>
