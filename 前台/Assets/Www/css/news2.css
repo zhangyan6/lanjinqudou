@@ -1,0 +1,65 @@
+﻿
+
+
+ul,li{list-style: none;padding: 0;margin: 0;}
+
+
+.box{width: 990px;overflow-x: hidden;margin: 0 auto;position: relative;z-index: 5;overflow-y: hidden;}
+
+
+
+
+.news-list{width: 774px;float: right;margin-left: 20px;position: relative;z-index: 10;}
+.news-list li{width: 100%;float: left;margin-bottom: 30px;position: relative;}
+.news-list li:hover{cursor: pointer}
+
+
+
+.letter{width: 740px;border-radius: 5px;box-shadow: 0 0 10px #999;position: fixed;top: 50%;left: 50%;background: white;z-index: 200;display: none;height: 550px;margin-left: -280px;margin-top: -275px;}
+.letter .close{position: absolute;right: 2%;top: 2%;width: 5%;}
+.letter .close:hover{cursor: pointer}
+.letter-info{width: 93%;margin-left: 3%;margin-top: 8%;height: 86%;text-align: center;overflow-x: hidden;overflow-y: auto;position: relative}
+.letter-info .title{line-height: 30px;width: 100%;font-family: "hydsj","宋体","黑体" !important;}
+.letter-info .resource{width: 100%;text-align: center;font-family: "hydsj","宋体","黑体" !important;}
+.letter-info p{margin: 0;padding: 0;font-family: "hydsj","宋体","黑体" !important;font-size: 14px;}
+.letter-info p span{font-family: "hydsj","宋体","黑体" !important;}
+
+
+
+
+.news{width: 100%;float: left;position: relative;min-width:990px;background: url("../images/bg4.jpg") repeat;overflow: hidden;}
+.news .news-list{width: 950px;float: left;margin-left: 20px;position: relative;margin-top: 50px;}
+.news .news-list li{width: 100%;float: left;margin-bottom: 20px;position: relative;}
+.news .news-list li:hover{cursor: pointer}
+.news .st5txt{position: absolute;height: 55px;width: 880px;right: 0;top: 0;line-height: 55px;}
+.news .st5txt .txt{font-size: 20px;color: #1d1d1d;float: left;font-weight: bold;font-family: "楷体","宋体","黑体";width: 630px;height: 55px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.news .st5txt .time{font-size: 14px;color: #a0a0a0;float: right;}
+.news .st5txt.read .txt{color: #b5b5b5;}
+.news .st5txt .seedet{float: right;margin-top: 15px;margin-right: 7px;}
+.news .box-bot{margin-top: 50px;}
+.letter.newsletter{width: 940px;border-radius: 5px;box-shadow: 0 0 10px #999;position: fixed;top: 50%;left: 50%;background: white;z-index: 200;display: none;height: 572px;margin-left: -470px;margin-top: -286px;}
+.letter.newsletter .close{position: absolute;right: 2%;top: 2%;width: 27px;}
+.letter.newsletter .close:hover{cursor: pointer}
+.letter.newsletter .letter-info{width: 890px;margin-left: 27px;margin-top: 5%;height: 90%;text-align: center;overflow-x: hidden;overflow-y: auto;}
+.letter.newsletter img{max-width: 100%;}
+.newsletter .title{font-size: 25px;width: 790px;margin-left: 75px;float: left;line-height: 25px;color: #3b801c;font-weight: bold;text-align: center;}
+.newsletter .resource{font-size: 15px;width: 790px;margin-left: 75px;float: left;line-height: 25px;color: #3b801c;font-weight: bold;text-align: center;margin-bottom: 15px;}
+.newsletter .content{padding-top: 0px; width: 850px; height: 450px; margin-top: 60px; padding-left: 10px; margin-bottom: 0px;text-align: left;font-size: 14px;}
+
+.newsletter .writer{font-size: 20px;width: 740px;margin-left: 75px;float: left;line-height: 25px;color: #3b801c;font-weight: bold;text-align: center;margin-top: 10px;}
+.newsletter .artical{font-size: 14px;color: #232323;float: left;width: 740px;margin-left: 75px;line-height: 20px;margin-top: 20px;text-align: left;}
+
+
+
+
+
+.page{margin-top: 10px;margin-bottom: 50px;width: 100%;height: 30px;line-height: 30px;text-align: center;float: left;position: relative;}
+.pagebox{margin: 0 auto;height: 30px;display: inline-block;font-size: 12px;color: #434343}
+.pagebox a{width: 30px;text-align: center;float: left;display: inline-block;color: #434343}
+.pagebox span{text-align: center;float: left;display: inline-block;}
+.pagebox .nextp{margin-right: 5px;}
+.pagebox input{float: left;width: 30px;height: 30px;outline: none;border: none;background: url("../images/nowpage.png") no-repeat;text-align: center;margin: 0 5px;line-height: 30px;}
+
+
+
+

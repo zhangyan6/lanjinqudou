@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>常见问题管理</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/content.css" />
+	<link href="css/allproduct.css" type="text/css" rel="stylesheet" />
+</head>
+<body marginwidth="0" marginheight="0">
+	<div class="container">
+		<div class="public-nav">您当前的位置：<a href="main.html">管理首页</a>><a href="questions-all.html">常见问题管理</a></div>
+		<div class="public-content">
+			
+        
+        <div class="search-wrap">
+            <div class="search-content">
+                <form action="/jscss/admin/design/index" method="post">
+                    <table class="search-tab">
+                        <tr>
+                            <th width="120">选择分类:</th>
+                            <td>
+                                <select name="search-sort" id="">
+                                    <option value="">全部</option>
+                                    <option value="19">xxx</option>
+                                    <option value="20">xx</option>
+                                    <option value="21">xx</option>
+                                    
+                                </select>
+                            </td>
+                            <th width="70">关键字:</th>
+                            <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
+                            <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
+                        </tr>
+                    </table>
+                    <div class="result-title">
+                    <div class="result-list">
+                        
+                        <a id="batchDel" href="javascript:void(0)" onclick="deleteallbutton()" style="height: 24px; width: 80px;border: 1px solid #ccc;background:#fff;font-size: 12px;text-align:center"><i class="icon-font"></i>
+                        批量删除</a>
+                        <p id="demo"></p>
+                        <script>
+                           function deleteallbutton(){
+                           var x;
+                           var r=confirm("你确定要批量删除吗？");
+                               if (r==true){
+                                 x="删除成功!";
+                              }
+                                else{
+                                 x="已取消删除!";
+                              }
+                             document.getElementById("demo").innerHTML=x;
+                            }
+                       </script>
+                        <a id="updateOrd" href="javascript:void(0)" style="height: 24px; width: 80px;border: 1px solid #ccc;font-size: 12px;text-align:center;background:#fff;"><i class="icon-font"></i>更新排序</a>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="main-wrap">
+
+        
+        
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th>
+                            <th>排序</th>
+                            <th>ID</th>
+                            <th>常见问题</th>
+                            <th>解答疑惑</th>
+                            
+                            
+                            <th>备注</th>
+                            <th>发布人</th>
+                            <th>更新时间</th>                            
+                            <th>操作</th>
+                            <th>状态</th>
+                            <th>审核</th>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="1" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="1" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="1" type="text">
+                            </td>
+                            <td>1</td>
+                            <td title="用户1"><a target="_blank" href="#" title="用户1">用户1</a>
+                            </td>
+                            <td>1</td>
+                            
+                            
+                            </td>
+                            <td>xxxxxx</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                
+                                <a class="link-update" href="questions-change.html">修改</a>
+                                <a class="link-del" href="#" onclick="deletebutton()">删除</a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                            <td><span style="color:#999">大图</span></td>
+                            <td><span style="color:#6bc095">已审核</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="2" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="2" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="2" type="text">
+                            </td>
+                            <td>2</td>
+                            <td title="用户2"><a target="_blank" href="#" title="用户2">用户2</a> 
+                            </td>
+                            <td>2</td>
+                            
+                           
+                            <td>xxxx</td>
+                            <td>admin</td>
+                            <td>2013-12-30 22:34:00</td>
+                            
+                          <td>
+                                
+                                <a class="link-update" href="questions-change.html">修改</a>
+                                <a class="link-del" href="#" onclick="deletebutton()">删除</a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                            <td><span style="color:#999">大图</span></td>
+                            <td><span style="color:#6bc095">已审核</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="3" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="3" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="3" type="text">
+                            </td>
+                            <td>3</td>
+                            <td title="用户3"><a target="_blank" href="#" title="用户3">用户3</a>
+                            </td>
+                            <td>3</td>
+                            
+                           
+                            <td>xxxx</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                           <td>
+                                
+                                <a class="link-update" href="questions-change.html">修改</a>
+                                <a class="link-del" href="#" onclick="deletebutton()">删除</a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                            <td><span style="color:#999">大图</span></td>
+                            <td><span style="color:#6bc095">已审核</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="4" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="4" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="4" type="text">
+                            </td>
+                            <td>4</td>
+                            <td title="用户4"><a target="_blank" href="#" title="用户4">用户4</a> 
+                            </td>
+                            <td>4</td>
+                            
+                            
+                            <td>xxxxxx</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                
+                                <a class="link-update" href="questions-change.html">修改</a>
+                                <a class="link-del" href="#" onclick="deletebutton()">删除</a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                            <td><span style="color:#999">大图</span></td>
+                            <td><span style="color:#6bc095">已审核</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tc"><input name="id[]" value="5" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="5" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="5" type="text">
+                            </td>
+                            <td>5</td>
+                            <td title="用户4"><a target="_blank" href="#" title="用户4">用户4</a> 
+                            </td>
+                            <td>5</td>
+                            
+                            
+                            
+                            <td>xxxxx</td>
+                            <td>admin</td>
+                            <td>2014-03-15 21:11:01</td>
+                            
+                            <td>
+                                
+                                <a class="link-update" href="questions-change.html">修改</a>
+                                <a class="link-del" href="#" onclick="deletebutton()">删除</a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="删除成功!";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                            <td><span style="color:#999">大图</span></td>
+                            <td><span style="color:#6bc095">已审核</span></td>
+                        </tr>
+                        
+                        
+                    </table>
+                    <div class="page">
+                    <form action="" method="get">
+                    共<span>42</span>个站点
+                        <a href="">首页</a>
+                        <a href="">上一页</a>
+                        <a href="">下一页</a>
+                        第<span style="color:red;font-weight:600">12</span>页
+                        共<span style="color:red;font-weight:600">120</span>页
+                        <input type="text" class="page-input">
+                        <input type="submit" class="page-btn" value="跳转">
+                    </form>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+    </div>
+    
+</body>
+</html>

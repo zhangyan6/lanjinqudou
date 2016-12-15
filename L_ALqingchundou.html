@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link href="css/list.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container">
+		
+        <div class="FA" >
+        	<h3>青春痘治疗案例：</h3><!--方案介绍-->
+        	<hr></hr>
+        	<div class="AL" style="height:230px">
+            <div class="AL-picture">
+                <a href="C_ALchunzhongyao1.html"><img src="images/img_2.jpg"></a>
+                <p>案例一</p>
+            </div>
+            <div class="AL-picture">
+                <a href="C_ALchunzhongyao1.html"><img src="images/img_2.jpg"></a>
+                <p>案例二</p>
+            </div>
+            <div class="AL-picture">
+                <a href="C_ALchunzhongyao1.html"><img src="images/img_2.jpg"></a>
+                <p>案例三</p>
+            </div>
+        </div>
+       
+        <div class="SY">
+        	<h3>治疗过程：</h3><!--适用人群-->
+        	<hr></hr>
+        	<p>夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜</p>
+        </div>
+        <div class="CP">
+        	<h3>治疗方案：</h3><!--产品介绍-->
+        	<hr></hr>
+        	<p>夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜夏季是皮肤出油的旺盛期，控油祛痘的工作格外需要注意，为了达到更好的控油祛痘效果不妨试试自制祛痘面膜</p>
+        </div>
+        
+	</div>
+	<!--轮播图-->
+	<script type="text/javascript">
+        /*图片滚动效果*/
+        var speedpic = 20;//速度数值越大速度越慢
+        document.getElementById("list2").innerHTML = document.getElementById("list1").innerHTML;
+        function Marqueepic() {
+            if (document.getElementById("list2").offsetWidth
+                    - document.getElementById("list").scrollLeft <= 0) {
+                document.getElementById("list").scrollLeft -= document
+                        .getElementById("list1").offsetWidth;
+            } else {
+                document.getElementById("list").scrollLeft++;
+            }
+        }
+        var MyMarpic = setInterval(Marqueepic, speedpic);
+
+        document.getElementById("list").onmouseover = function() {
+            clearInterval(MyMarpic);
+        }
+        document.getElementById("list").onmouseout = function() {
+            MyMarpic = setInterval(Marqueepic, speedpic);
+        }
+	</script>
+</body>
+</html>

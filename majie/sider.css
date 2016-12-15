@@ -1,0 +1,48 @@
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2,
+ h3, h4, h5, h6, pre, form, fieldset, input, 
+textarea, p, blockquote, th, td, font {
+ padding:0; margin:0; font-family:Arial,"ËÎÌå", Helvetica, sans-serif}
+a{text-decoration:none;font-size:12px;color:#535353}
+a:hover{color:red;text-decoration: underline1}
+li{list-style-type:none}
+
+
+
+.product_list_body{
+float:left;
+width:120px;margin:0 auto;
+bo1rder:1px #000 solid;
+border-top:none;
+border-bottom:none}
+
+
+
+
+.article_wz{margin-top:10px}
+.acticle_wz_nav{width:150px;
+height:500px;float:left;
+position1:fixed;top:330px;}
+.acticle_wz_nav_title{width:150px;
+height:43px;background:url(../images/article_bj.png);
+text-align:center;line-height:43px;font-size:16px;color:#febb7c;
+font-family:"Î¢ÈíÑÅºÚ";border-radius:5px}
+.article_wz_nav_list li{width:150px;height:30px;margin-top:5px}
+.article_wz_nav_list li a{width:150px;height:30px;display:block;
+background:#fff;text-align:center;line-height:30px;border-radius:5px;
+font-size:14px;color:#000}
+.article_wz_nav_list li a:hover{background:#71063c;color:#fff}
+
+
+
+.dingbu a{background:url(../images/dingbu.png) no-repeat 25px center #71063c!important;color:#fff!important}
+
+
+
+
+
+
+
+
+
+
