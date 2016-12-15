@@ -13,46 +13,26 @@
   <div class="login_m">
 
     <div class="login_l">
-    <form name="myForm" action="demo-form.php" onsubmit="return validateForm()" method="post">
+    <form name="myForm" action="admin.html" onsubmit="return validateForm()" method="post">
           <h2>用户名</h2> 
-          <label>   
-                
+            
+           <label>   
+            
           <input type="text" name="fname" id="username" class="txt_input txt_input2" value="username" ><!--onfocus="if (value ==&#39;username&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;username&#39;}"   --><!--设置用户名值-->
-          </label>                
-          <script>
-            function validateForm(){
-            var x=document.forms["myForm"]["fname"].value;
-             if (x==null || x==""){
-             alert("用户名不能为空！");
-              return false;
-              }
-              if (x==null || x=="zy"){
-             alert("用户名错误！");
-              return false;
-              }
-            var x=document.forms["myForm"]["fname2"].value;
-             if (x==null || x==""){
-             alert("密码不能为空！");
-              return false;
-              }
-              if (x==null || x=="xxxxxx"){
-             alert("密码错误！");
-              return false;
-              }
-            }
-          </script>
-
-	
-
-
-  
-          <h2>密码</h2>
-          <label>
+             </label>
+            
+          <label>            
+         <h2>密码</h2>
+        
            
           <input type="password" id="userpwd" name="fname2" class="txt_input" value="111111"><!--name="textfield2"  class="txt_input" onfocus="if (value ==&#39;******&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;******&#39;}"  value="******"-->
           
-          
+      
+      
+      
+    
           </label>
+             
         </div>
        </div>
         
@@ -62,13 +42,18 @@
   <input type="checkbox" name="checkbox" id="save_me">
    <label for="checkbox">记住密码</label>
    </div>
-    <label>
-      <a href="admin.html" class="sub_button1">登录
-      
-      </a>
-    </label>
+
+    <input type="submit" value="登录" class="sub_button1">
 
   </div>
+	 
+
+ </form>
+  
+
+
+  
+      
 
  
         
@@ -122,8 +107,31 @@ function check(){
 
 
 -->
-</div>
-</div>
+
+<script>
+function validateForm(){
+var x=document.forms["myForm"]["fname"].value;
+if (x==null || x==""){
+  alert("用户名不能为空！");
+  return false;
+  }
+  if (x!="username"){
+  alert("用户名错误！");
+  return false;
+  }
+  var y=document.forms["myForm"]["fname2"].value;
+if (y==null || y==""){
+  alert("密码不能为空！");
+  return false;
+  }
+  if (y!="111111"){
+  alert("密码错误！");
+  return false;
+  }
+}
+
+</script>
+  
 
 	
 </body>

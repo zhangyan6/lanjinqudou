@@ -82,7 +82,7 @@
 }
 p.forgot{
    position:absolute;
-   left: 550px;
+    right: 500px;
     top: 500px;
  font-size:18px;
  text-align:right;
@@ -101,9 +101,7 @@ color:#9999FF;
 }
 .sub_button1{
   position:absolute;
-  left: 550px;
-text-transform:uppercase; 
-margin-bottom:11px;
+  right: 600px;
   top: 600px;
   margin:0px;    
   text-align:center;

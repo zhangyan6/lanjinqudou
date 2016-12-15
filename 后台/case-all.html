@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/content.css" />
 	<link href="css/allproduct.css" type="text/css" rel="stylesheet" />
+    <script src="js/add.js"></script>
 </head>
 <body marginwidth="0" marginheight="0">
 	<div class="container">
@@ -43,19 +44,7 @@
                         <a id="batchDel" href="javascript:void(0)" onclick="deleteallbutton()" style="height: 24px; width: 80px;border: 1px solid #ccc;background:#fff;font-size: 12px;text-align:center"><i class="icon-font"></i>
                         批量删除</a>
                         <p id="demo"></p>
-                        <script>
-                           function deleteallbutton(){
-                           var x;
-                           var r=confirm("你确定要批量删除吗？");
-                               if (r==true){
-                                 x="删除成功!";
-                              }
-                                else{
-                                 x="已取消删除!";
-                              }
-                             document.getElementById("demo").innerHTML=x;
-                            }
-                       </script>
+                        
                         <a id="updateOrd" href="javascript:void(0)" style="height: 24px; width: 80px;border: 1px solid #ccc;font-size: 12px;text-align:center;background:#fff;"><i class="icon-font"></i>更新排序</a>
                     </div>
                 </div>
@@ -104,19 +93,7 @@
                                 <a class="link-update" href="case-change.html">修改</a>
                                 <a class="link-del" href="#" onclick="deletebutton()">删除</a>
 <p id="demo"></p>
-<script>
-function deletebutton(){
-    var x;
-    var r=confirm("你确定要删除这条信息吗？");
-    if (r==true){
-        x="删除成功!";
-    }
-    else{
-        x="已取消删除!";
-    }
-    document.getElementById("demo").innerHTML=x;
-}
-</script>
+
                             </td>
                             <td><span style="color:#999">大图</span></td>
                             <td><span style="color:#6bc095">已审核</span></td>
