@@ -1,0 +1,36 @@
+﻿body{font-size:12px; font-family: 'Microsoft YaHei', arial, tahoma, sans-serif; line-height: 1.5; color: #666;}
+/*方案-内调外治*/
+.container{width: 800px;height: 900px;margin-left: 20%;margin-top: 10%;}
+#pic img{margin-left: 10px;width: 200px;margin-top: 5%;}
+.FA{width: 100%;height: 150px;}
+.FA p{text-indent: 2em;}
+.SY{width: 100%;height: 150px;}
+.SY p{text-indent: 2em;}
+.CP{width: 100%;height: 150px;}
+.CP p{text-indent: 2em;}
+.AL{width: 100%;height: 300px;}
+.AL-picture{width: 150px;height: 150px;float: left;margin-left: 10.6%;margin-top: 5%;}
+.AL-picture img{width: 150px;}
+.AL-picture p{text-align: center;margin-top: -1%;font-family: 'SimHei'}
+
+/*项目-祛痘*/
+.container2{width: 800px;height: 1200px;margin-left: 20%;margin-top: 10%;}
+.picture{width: 100%;height: 20%;}
+.picture img{width: 100%;height: 100%;}
+.introduce{width: 100%;height: 15%;}
+.introduce p{text-indent: 2em;}
+.solution{width: 100%;height: 25%;}
+.solutions{width: 25%;height: 70%;float: left;margin-left: 5.8%;}
+.new img{width: 30%;margin-left: 35%;}
+.solution-1{width: 100%;height: 60%;}
+.solution-1 img{width: 40%;margin-left: 30%;}
+.name1{width: 100%;height: 10%;text-align: center;}
+.click img{width: 80%;margin-left: 10%;}
+
+.good{width: 100%;height: 25%;}
+.goods{width: 25%;height: 70%;float: left;margin-left: 5.8%;}
+.new img{width: 30%;margin-left: 35%;}
+.good-1{width: 100%;height: 60%;}
+.good-1 img{width: 40%;margin-left: 30%;}
+.name1{width: 100%;height: 10%;text-align: center;}
+.click img{width: 80%;margin-left: 10%;}

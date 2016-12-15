@@ -1,0 +1,202 @@
+﻿*{margin:0;padding:0}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,
+ fieldset, input, textarea, p, blockquote, th, td, font { 
+padding:0; margin:0; font-family:Arial,"宋体", Helvetica, sans-serif}
+a{text-decoration:none;font-size:12px;color:#535353}
+a:hover{color:red;text-decoration: underline1}
+li{list-style-type:none}
+
+.main{width:1200px;margin:0 auto;bo1rder:1px #000 solid;border-top:none;border-bottom:none}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dir{height:30px;font-size:12px;color:#181818；}
+.dir a{color:#fff;background:#71063c;padding:5px 8px;border-radius:15px;margin:0 5px}
+.dir a:hover{color:#fff;background:#a9004b}
+
+
+
+
+
+
+
+
+
+
+
+.pinglun_list{width:980px;margin:0 auto}
+.pinglun_list li{border-top:1px #cacaca solid;padding:15px}
+.pinglun_list li:hover{background:#ebebeb}
+.pinglun_list_name{font-size:14px;color:#b21347}
+.pinglun_list_time{font-size:12px;color:#bbbbbb;margin:5px 0}
+.pingxuan_list_nr{font-size:14px;line-height:22px;border-bottom:1px #b3b3b3 dashed;padding-bottom:8px}
+.pingxuan_list_hf{line-height:22px;font-size:14px;padding-top:8px}
+.pingxuan_list_hf span{padding:3px 2px 3px 10px;background:#ba164c;border-radius:15px;color:#fff;margin-right:10px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.liuyan{background:#fff;margin-top:20px;padding-bottom:20px}
+..liuyan label{font-size:14px}
+.liuyan_bd{width:1080px;height:430px;margin:50px auto 0;background:url(../images/liuyan_bj.png) no-repeat 650px 0px}
+.liuyan_dx{margin-top:20px}
+.liuyan_dx input{margin:0 5px 010px;border-radius: 4px;border:1px #b3b3b3 solid}
+.liuyan_name input{width:230px;height:26px;margin:15px 0 0 5px;border-radius: 4px;border:none;border:1px #b3b3b3 solid}
+.liuyan_dh input{width:230px;height:26px;margin:15px 0 0 5px;border-radius: 4px;border:none;border:1px #b3b3b3 solid}
+.liuyan_sj{margin-top:15px}
+.liuyan_sj select{width:80px;height:26px;border-radius: 4px;border:none;border:1px #b3b3b3 solid}
+.liuyan_neirong{margin-top:15px}
+.liuyan_neirong label{float:left;border:none}
+.liuyan_neirong textarea{width:450px;height:150px;margin-left:5px;border-radius: 4px;border:none;border:1px #b3b3b3 solid}
+.yuyue{text-align:right;margin:30px 20px 0 0}
+.yuyue #yuyue{padding:7px 30px;color:#fff;float:left;border:none;background:#71063c;font-size:14px;border-radius:15px;cursor: pointer;margin-left:100px;cursor:pointer}
+
+.liuyan_list{width:1100px;margin:0 auto}
+.liuyan_list li{border-top:1px #cacaca solid;padding:15px}
+.liuyan_list li:hover{background:#ebebeb}
+.liuyan_list_name{font-size:14px;color:#b21347}
+.liuyan_list_time{font-size:12px;color:#bbbbbb;margin:5px 0}
+.liuyan_list_nr{font-size:14px;line-height:22px;border-bottom:1px #b3b3b3 dashed;padding-bottom:8px}
+.liuyan_list_hf{line-height:22px;font-size:14px;padding-top:8px}
+.liuyan_list_hf span{padding:3px 2px 3px 10px;background:#ba164c;border-radius:15px;color:#fff;margin-right:10px}
+.liuyan_title{width:185px;height:35px;background:url(../images/product_bj.png) no-repeat;margin:0 auto;line-height:35px;color:#fff;position:relative;top:-6px;font-family:"微软雅黑";font-weight:normal;font-size:16px;text-align:center}
+.liuyan .flip{margin:20px 0}
+
+
+
+
+.flip{width:100%;text-align:center}
+.flip span{padding:5px 10px;font-size:14px}
+.flip a{padding:5px 10px;border:1px	#760235 solid;font-size:14px}
+.flip a:hover{background:#760235;color:#fff}
+.current{background:#760235;border:1px	#760235 solid;color:#fff}
+
+
+
+
+
+
+
+/* line 256, ../sass/_join.layout.scss */
+.join-content {
+  height: auto;
+}
+/* line 258, ../sass/_join.layout.scss */
+.join-content .partner-content {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+/* line 262, ../sass/_join.layout.scss */
+.join-content .partner-content .partner-intro {
+  text-align: center;
+}
+/* line 263, ../sass/_join.layout.scss */
+.join-content .partner-content .people-intro {
+  width: 100%;
+  height: 430px;
+  background: #F2F2F2;
+  margin: 55px 0px;
+}
+/* line 268, ../sass/_join.layout.scss */
+.join-content .partner-content .people-intro img {
+  display: block;
+  padding: 40px 30px 40px 40px;
+  float: left;
+}
+/* line 269, ../sass/_join.layout.scss */
+.join-content .partner-content .people-intro .intro {
+  padding-top: 40px;
+}
+/* line 270, ../sass/_join.layout.scss */
+.anli-title {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 25px;
+ border-bottom-style:ridge;
+border-bottom-color:#fff;
+  
+   font-variant: small-caps;
+   color:#336699;
+   font-family:"Times New Roman",Georgia,Serif;
+ text-align: center;
+}
+/* line 276, ../sass/_join.layout.scss */
+.anli p {
+ 
+ 
+  font-size: 30px;
+  line-height: 30px;
+  text-indent: 30px;
+  width: 1050px;
+ text-indent: 1cm;
+   font-variant: small-caps;
+   color:#500000;
+  font-family:Arial,"宋体", Helvetica, sans-serif;
+ text-align: center;
+}
+/* line 283, ../sass/_join.layout.scss */
+.join-content .partner-content .end {
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 14px;
+  padding-bottom: 100px;
+}
+
+
+
+
+.join-content{
+	margin-top:10px;
+}
+
+
+
+.wenzi p {
+ 
+ 
+  font-size: 25px;
+  line-height: 30px;
+  text-indent: 30px;
+
+ text-indent: 1cm;
+   font-variant: small-caps;
+   color:#500000;
+  font-family:Arial,"宋体", Helvetica, sans-serif;
+ 
+}
+.wenzi{
+  width:80%;
+  margin-left: 10%;
+}
+
