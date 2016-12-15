@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页推荐导航</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/content.css" />
+</head>
+<body marginwidth="0" marginheight="0">
+	<div class="container">
+		<div class="public-nav">您当前的位置：<a href="main.html">管理首页</a>><a href="index_tj.html">首页推荐管理</a></div>
+		<div class="public-content">
+			<div class="public-content-header">
+				<h3>修改网站配置</h3>
+			</div>
+			<div class="public-content-cont two-col">
+				<div class="public-cont-left">
+					<div class="public-cont-title">
+						<h3>添加修改分类</h3>
+					</div>
+					<div class="form-group">
+						<label for="">所属导航</label>
+						<select name="" id="" class="form-select">
+							<option value="1">一级导航</option>
+							<option value="1">二级导航</option>
+							<option value="1">三级导航</option>
+							<option value="1">四级导航</option>
+						</select>
+					</div>
+					<div class="form-group mt0">
+						<label for="">导航名称</label>
+						<input type="text" class="form-input-small">
+					</div>
+					<div class="form-group mt0">
+						<label for="">导航介绍</label>
+						<input type="text" class="form-input-small">
+					</div>
+					<div class="form-group mt0">
+						<label for="">排序编号</label>
+						<input type="text" class="form-input-small">
+					</div>
+					<div class="form-group mt0">
+						<label for="">链接</label>
+						<input type="text" class="form-input-small">
+					</div>
+					<div class="form-group mt0">
+						<label for="">是否显示</label>
+						<input type="checkbox" >
+					</div>
+					<div class="form-group mt0">
+						<label for="">是否外链	</label>
+						<input type="checkbox" >
+					</div>
+					<div class="form-group mt0">
+						<label for="">新栏目</label>
+						<input type="checkbox" >
+					</div>
+					<div class="form-group mt0">
+						<label for="">图标</label>
+						<input type="text" class="form-input-small">
+						<div class="file"><input type="file" class="form-input-file" />选择文件</div>
+						<div class="file"><input type="submit" class="form-input-file"/>上传</div>
+					</div>
+					<div class="form-group mt0" style="text-align:center;margin-top:15px;">
+					<input type="submit" onclick="tianjia()" class="sub-btn" value="提  交" />
+					<script>
+                        function tianjia(){
+                              alert("修改成功！");
+                         }
+                    </script>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
