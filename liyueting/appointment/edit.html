@@ -1,0 +1,82 @@
+<layout name='viewadmin' />
+<div class="container">
+		<div class="public-nav">您当前的位置：<a href="{:U('Admin/appointment/add')}">修改添加</a></div>
+		<div class="public-content">
+			<div class="public-content-header">
+				<h3>修改添加</h3>
+			</div>
+			<div class="public-content-cont">
+			<form action="{:U('Admin/appointment/update')}" method="post" enctype="multipart/form-data">
+			    <div class="form-group">
+					<label for="">用户编号</label>
+					<input class="form-input-txt" type="text" name="userid" value="{$appointment.userid}" />
+				</div>
+				<div class="form-group">
+					<label for="">用户电话</label>
+					<input class="form-input-txt" type="text" name="userphone" value="{$appointment.userphone}" />
+				</div>
+				<div class="form-group">
+					<label for="">用户QQ</label>
+					<input class="form-input-txt" type="text" name="userqq" value="{$appointment.userqq}" />
+				</div>
+				<div class="form-group">
+					<label for="">用户微信</label>
+					<input class="form-input-txt" type="text" name="userweixin" value="{$appointment.userweixin}" />
+				</div>
+				<div class="form-group">
+					<label for="">用户地址</label>
+					<input class="form-input-txt" type="text" name="useradress" value="{$appointment.useradress}" />
+				</div>
+				<div class="form-group">
+					<label for="">预约医师姓名</label>
+					<input class="form-input-txt" type="text" name="doctorname" value="{$appointment.doctorname}" />
+				</div>
+				<div class="form-group">
+					<label for="">预约时间</label>
+					<input class="form-input-txt" type="text" name="appointmenttime" value="{$appointment.appointmenttime}" />
+				</div>
+				
+				<div class="form-group">
+					<label for="">是否接受预约(是/否)</label><br/>
+					<input class="form-input-txt" type="text" name="ifaccept" value="{$appointment.ifaccept}" />
+				</div>
+				<br/><br/><br/>
+				<div class="form-group">
+					<label for="">是否联系用户(是/否)</label><br/>
+					<input class="form-input-txt" type="text" name="ifappointment" value="{$appointment.ifappointment}" />
+				</div>
+				<br/><br/><br/>
+				<div class="form-group">
+					<label for="">发布人</label>
+					<input class="form-input-txt" type="text" name="publisher" value="{$appointment.publisher}" />
+				</div>
+
+				<div class="form-group">
+					<label for="">信息设置</label>
+					<input class="form-input-radius" type="checkbox" name="Dream_SiteName" value="" />大图
+					<input class="form-input-radius" type="checkbox" name="Dream_SiteName" value="" />审核
+				</div>
+				<div class="form-group">
+					<label for="">备注</label>
+					<textarea class="form-input-textara" type="text" name="remark">{$appointment.remark}</textarea>
+				</div>
+				<div class="form-group">
+					<label for="">发布时间</label>
+					<input class="form-input-txt" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" name="time" value="{$appointment.time}">
+				</div>
+				<div class="form-group" style="margin-left:150px;">
+					<input type="submit" onclick="tianjia()" class="sub-btn" value="提  交" />
+					
+					<input type="reset" class="sub-btn" value="重  置" />
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<script src="__PUBLIC__/admin/js/kindeditor-all-min.js"></script>
+<script src="__PUBLIC__/admin/js/laydate.js"></script>
+<script>
+	 KindEditor.ready(function(K) {
+                window.editor = K.create('#editor_id');
+        });
+</script>

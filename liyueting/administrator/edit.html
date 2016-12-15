@@ -1,0 +1,94 @@
+ <layout name='viewadmin' />
+  <div class="container">
+        <div class="public-nav">您当前的位置：<a href="{:U('Admin/administrator/edit')}">管理员修改</a></div>
+        <div class="public-content">
+            <div class="public-content-header">
+                <h3>添加管理员</h3>
+            </div>
+            
+<div class="main-wrap">
+
+        
+        <div class="result-wrap">
+            <div class="result-content">
+               <form action="{:U('Admin/administrator/update')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red">*</i>ID：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="id" size="50" value="{$administrator.id}" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>用户名：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="username" size="50" value="{$administrator.username}" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>邮箱：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="email" size="50" value="{$administrator.email}" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>电话：</th>
+                                <td>
+                                    <input class="common-text required" id="title" name="phone" size="50" value="{$administrator.phone}" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                            <th width="120"><i class="require-red">*</i>用户权限：</th>
+                            <td>
+                                <select name="limit" id="catid" class="required" value="{$administrator.limit}">
+                                    <option value="">请选择</option>
+                                    <option value="19">全部</option>
+                                    <option value="20">用户管理</option>
+                                    <option value="21">产品项目方案案例管理</option>
+                                    <option value="22">标签关键字管理</option>
+                                    
+                                </select>
+                            </td>
+                        </tr>
+                            <tr>
+                                <th>设置密码：</th>
+                                <td><input class="common-text" name="password" size="50" value="{$administrator.password}" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>确认密码：</th>
+                                <td><input class="common-text" name="repassword" size="50" value="{$administrator.repassword}" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>上传头像：</th>
+                                <img src="__PUBLIC__/{$administrator.picture}" width="300px" height="50px"/>
+                                <td><input name="picture" id="" type="file"><!--<input type="submit" onclick="submitForm('/jscss/admin/design/upload')" value="上传图片"/>--></td>
+                            </tr>
+                            <tr>
+                                <th>备注：</th>
+                                <td><textarea name="remark" class="common-textarea" id="content" cols="30" style="width: 98%;" rows="10">{$administrator.remark}</textarea></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    
+
+
+
+                                   
+                                    
+                                    <input type="submit" onclick="tianjia()" class="sub-btn" value="提  交" />
+                   
+                    <input type="reset" class="sub-btn" value="重  置" />
+                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+             
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>

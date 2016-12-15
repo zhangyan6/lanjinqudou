@@ -1,0 +1,79 @@
+<layout name='viewadmin' />
+<div class="container">
+		<div class="public-nav">您当前的位置：<a href="main.html">方案修改</a></div>
+		<div class="public-content">
+			<div class="public-content-header">
+				<h3>添加方案</h3>
+			</div>
+			<div class="public-content-cont">
+			<form action="{:U('Admin/program/update')}" method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<label for="">请选择分类</label>
+					<select name="" class="form-select">
+					    <option value="">请选择分类</option>
+						<option value="19">内调外治平衡疗法</option>
+                                    <option value="20">纯中药外用治疗</option>
+                                    <option value="21">物理疗法</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="">方案ID</label>
+					<input class="form-input-txt" type="text" name="id" value="{$program.id}" />
+				</div>
+				<div class="form-group">
+					<label for="">方案名称</label>
+					<input class="form-input-txt" type="text" name="prname" value="{$program.prname}" />
+				</div>
+				<div class="form-group">
+					<label for="">方案简介</label>
+					<textarea class="form-input-textara" type="text" name="printroduce" value="{$program.printroduce}">{$program.printroduce}</textarea>
+				</div>
+				<div class="form-group">
+					<label for="">方案信息</label>
+					<textarea id="editor_id" name="prallintroduce"  class="form-input-textara" style="width:700px;height:300px;" value="{$program.prallintroduce}">
+						{$program.prallintroduce}
+					</textarea> 
+				</div>
+				<div class="form-group">
+					<label for="">发布人</label>
+					<input class="form-input-txt" type="text" name="prpublisher" value="{$program.prpublisher}" />
+				</div>
+				<div class="form-group">
+					<label for="">产品图</label>
+					<img src="__PUBLIC__/{$program.prpicture}" width="300px" height="50px"/>
+					 <input type="file" name="prpicture" value="{$program.prpicture}">
+
+					<!-- <input class="form-input-txt" type="text" name="pimg" value="" /> -->
+					<!-- <div class="file"><input type="file" class="form-input-file" name="pimg"/>选择文件</div> -->
+					<!-- <div class="file"><input type="submit" class="form-input-file"/>上传</div> -->
+					<a href="#">预览</a>
+				</div>
+				<div class="form-group">
+					<label for="">信息设置</label>
+					<input class="form-input-radius" type="checkbox" name="Dream_SiteName" value="" />大图
+					<input class="form-input-radius" type="checkbox" name="Dream_SiteName" value="" />审核
+				</div>
+				<div class="form-group">
+					<label for="">备注</label>
+					<input class="form-input-txt" type="text" name="prremark" value="{$program.prremark}" />
+				</div>
+				<div class="form-group">
+					<label for="">录入时间</label>
+					<input class="form-input-txt" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" name="prtime" value="{$program.prtime}">
+				</div>
+				<div class="form-group" style="margin-left:150px;">
+					<input type="submit" onclick="tianjia()" class="sub-btn" value="提  交" />
+					
+					<input type="reset" class="sub-btn" value="重  置" />
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<script src="__PUBLIC__/admin/js/kindeditor-all-min.js"></script>
+<script src="__PUBLIC__/admin/js/laydate.js"></script>
+<script>
+	 KindEditor.ready(function(K) {
+                window.editor = K.create('#editor_id');
+        });
+</script>

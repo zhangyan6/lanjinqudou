@@ -1,0 +1,82 @@
+<layout name='viewadmin' />
+<div class="container">
+		<div class="public-nav">您当前的位置：<a href="{:U('Admin/project/add')}">添加项目</a></div>
+		<div class="public-content">
+			<div class="public-content-header">
+				<h3>添加项目</h3>
+			</div>
+			<div class="public-content-cont">
+			<form action="{:U('Admin/project/store')}" method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<label for="">请选择分类</label>
+					<select name="" class="form-select">
+					    <option value="">请选择分类</option>
+						<option value="19">祛痘项目</option>
+                                    <option value="20">祛印项目</option>
+                                    <option value="21">平疤项目</option>
+                                    <option value="22">修复项目</option>
+                        
+                                    <option value="23">护肤项目</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="">项目名称</label>
+					<input class="form-input-txt" type="text" name="pname" value="" />
+				</div>
+				<div class="form-group">
+					<label for="">项目图编号</label>
+					<input class="form-input-txt" type="text" name="pimgnumber" value="" />
+				</div>
+				<div class="form-group">
+					<label for="">项目简介</label>
+					<textarea class="form-input-textara" type="text" name="pintroduction"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="">项目内容</label>
+					<textarea id="editor_id" name="pcontent"  class="form-input-textara" style="width:700px;height:300px;">
+						&lt;strong&gt;项目内容&lt;/strong&gt;
+					</textarea> 
+				</div>
+				<div class="form-group">
+					<label for="">发布人</label>
+					<input class="form-input-txt" type="text" name="ppublishe" value="" />
+				</div>
+				<div class="form-group">
+					<label for="">备注</label>
+					<textarea class="form-input-textara" type="text" name="premark"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="">项目图</label>
+			
+					 <input type="file" name="pimg">
+
+					<!--  <input class="form-input-txt" type="text" name="pimg" value="" /> 
+					<div class="file"><input type="file" class="form-input-file" name="pimg"/>选择文件</div> 
+					 <div class="file"><input type="submit" class="form-input-file"/>上传</div> 
+					<a href="#">预览</a> -->
+				</div>
+				<div class="form-group">
+					<label for="">信息设置</label>
+					<input class="form-input-radius" type="checkbox" name="Dream_SiteName" value="" />大图
+					<input class="form-input-radius" type="checkbox" name="Dream_SiteName" value="" />审核
+				</div>
+				<div class="form-group">
+					<label for="">录入时间</label>
+					<input class="form-input-txt" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" name="ptime">
+				</div>
+				<div class="form-group" style="margin-left:150px;">
+					<input type="submit" onclick="tianjia()" class="sub-btn" value="提  交" />
+					
+					<input type="reset" class="sub-btn" value="重  置" />
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<script src="__PUBLIC__/admin/js/kindeditor-all-min.js"></script>
+<script src="__PUBLIC__/admin/js/laydate.js"></script>
+<script>
+	 KindEditor.ready(function(K) {
+                window.editor = K.create('#editor_id');
+        });
+</script>
