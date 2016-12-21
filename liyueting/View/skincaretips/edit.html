@@ -1,0 +1,76 @@
+<layout name='viewadmin' />
+<div class="container">
+        <div class="public-nav">您当前的位置：<a href="{:U('Admin/skincaretips/edit')}">管理首页</a>></div>
+        <div class="public-content">
+            <div class="public-content-header">
+                <h3>添加美颜小贴士</h3>
+            </div>
+            
+<div class="main-wrap">
+
+        
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:U('Admin/skincaretips/update')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="">小贴士ID</label>
+                    <input class="form-input-txt" type="text" name="id" value="{$skincaretips.id}" />
+                </div>
+                <div class="form-group">
+                    <label for="">小贴士标题</label>
+                    <input class="form-input-txt" type="text" name="stitle" value="{$skincaretips.stitle}" />
+                </div>
+                <div class="form-group">
+                    <label for="">小贴士简介</label>
+                    <textarea class="form-input-textara" type="text" name="sintroduce">{$skincaretips.sintroduce}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">内容</label>
+                    <textarea id="editor_id" name="scontent"  class="form-input-textara" style="width:700px;height:300px;">
+                       {$skincaretips.scontent}
+                    </textarea> 
+                </div>
+                <div class="form-group">
+                    <label for="">发布人</label>
+                    <input class="form-input-txt" type="text" name="spublisher" value="{$skincaretips.spublisher}" />
+                </div>
+                <div class="form-group">
+                    <label for="">添加图片</label>
+                    <img src="__PUBLIC__/{$skincaretips.spicture}" width="300px" height="50px"/>
+                    <input class="form-input-txt" type="file" name="spicture"/>
+                    
+                    <a href="#">预览</a>
+                </div>
+
+                <div class="form-group">
+                    <label for="">信息设置</label>
+                    <input class="form-input-radius" type="checkbox" name="Dream_SiteName" value="" />大图
+                    <input class="form-input-radius" type="checkbox" name="Dream_SiteName" value="" />审核
+                </div>
+                <div class="form-group">
+                    <label for="">备注</label>
+                    <textarea class="form-input-textara" type="text" name="sremark">{$skincaretips.sremark}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">录入时间</label>
+                    <input class="form-input-txt" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" name="stime" value="{$skincaretips.stime}">
+                </div>
+                <div class="form-group" style="margin-left:150px;">
+                    <input type="submit" onclick="tianjia()" class="sub-btn" value="提  交" />
+                   
+                    <input type="reset" class="sub-btn" value="重  置" />
+                </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+     <script src="__PUBLIC__/admin/js/kindeditor-all-min.js"></script>
+    <script src="__PUBLIC__/admin/js/laydate.js"></script>
+<script>
+     KindEditor.ready(function(K) {
+                window.editor = K.create('#editor_id');
+        });
+</script>

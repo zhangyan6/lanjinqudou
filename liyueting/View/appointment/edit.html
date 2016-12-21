@@ -1,0 +1,54 @@
+<layout name='viewadmin' />
+<div class="container">
+		<div class="public-nav">您当前的位置：<a href="{:U('Admin/appointment/add')}">修改添加</a></div>
+		<div class="public-content">
+			<div class="public-content-header">
+				<h3>修改添加</h3>
+			</div>
+			<div class="public-content-cont">
+			<form action="{:U('Admin/appointment/update')}" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+					<label for="">ID</label>
+					<input class="form-input-txt" type="text" name="id" value="{$appointment.id}" />
+				</div>
+			    <div class="form-group">
+					<label for="">医师姓名</label>
+					<input class="form-input-txt" type="text" name="docname" value="{$appointment.docname}" />
+				</div>
+				<div class="form-group">
+					<label for="">医师职位</label>
+					<input class="form-input-txt" type="text" name="docpos" value="{$appointment.docpos}" />
+				</div>
+				<div class="form-group">
+					<label for="">医师简介</label>
+					<textarea class="form-input-textara" type="text" name="docintro">
+						{$appointment.docintro}
+					</textarea>
+				</div>
+				<div class="form-group">
+					<label for="">医师照片</label>
+					<img src="__PUBLIC__/{$appointment.docpic}" width="300px" height="50px"/>
+					<input class="form-input-txt" type="file" name="docpic" />
+				</div>
+				<div class="form-group">
+					<label for="">宣传大图</label>
+					<img src="__PUBLIC__/{$appointment.bigpic}" width="300px" height="50px"/>
+					<input class="form-input-txt" type="file" name="bigpic" />
+				</div>
+				
+				<div class="form-group" style="margin-left:150px;">
+					<input type="submit" onclick="tianjia()" class="sub-btn" value="提  交" />
+					
+					<input type="reset" class="sub-btn" value="重  置" />
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<script src="__PUBLIC__/admin/js/kindeditor-all-min.js"></script>
+<script src="__PUBLIC__/admin/js/laydate.js"></script>
+<script>
+	 KindEditor.ready(function(K) {
+                window.editor = K.create('#editor_id');
+        });
+</script>
