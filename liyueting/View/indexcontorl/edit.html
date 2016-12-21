@@ -1,0 +1,83 @@
+ <layout name='viewadmin' /> 
+ <div class="container">
+        <div class="public-nav">您当前的位置：<a href="{:U('Admin/indexcontorl/edit')}">首页内容修改</a></div>
+        <div class="public-content">
+            <div class="public-content-header">
+                <h3>首页内容修改</h3>
+            </div>
+            
+<div class="main-wrap">
+
+        
+        <div class="result-wrap">
+            <div class="result-content">
+                 <form action="{:U('Admin/indexcontorl/update')}" method="post" enctype="multipart/form-data">
+
+                  <div class="form-group">
+                    <label for="">ID</label>
+                    <input class="form-input-txt" type="text" name="id" value="{$indexcontrol.id}" />
+                </div>
+                
+
+                 <div class="form-group">
+                    <label for="">文字添加</label>
+                  <textarea id="editor_id" name="picontent"  class="form-input-textara" style="width:700px;height:300px;">
+                     {$indexcontrol.picontent}
+                  </textarea> 
+                    
+                </div>
+
+                <div class="form-group">
+                    <label for="">图片添加</label>
+                    <img src="__PUBLIC__/{$indexcontrol.picture}" width="300px" height="50px"/>
+                    <input class="form-input-txt" type="file" name="picture"  />
+                    
+                  
+                </div>
+
+                <div class="form-group">
+                    <label for="">发布人</label>
+                    <input class="form-input-txt" type="text" name="pipublisher" value="{$indexcontrol.pipublisher}" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="">信息设置</label>
+                    <input class="form-input-radius" type="checkbox" name="Dream_SiteName" value="" />大图
+                    <input class="form-input-radius" type="checkbox" name="Dream_SiteName" value="" />审核
+                </div>
+
+                <div class="form-group">
+                    <label for="">备注</label>
+                    <textarea class="form-input-textara" type="text" name="piremark">{$indexcontrol.piremark}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="">录入时间</label>
+                    <input class="form-input-txt" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" name="pitime" value="{$indexcontrol.pitime}">
+                </div>
+
+                <div class="form-group" style="margin-left:150px;">
+                    <input type="submit" onclick="tianjia()" class="sub-btn" value="提  交" />
+                    <script>
+                        function tianjia(){
+                              alert("");
+                         }
+                    </script>
+                   <a href="{:U('Admin/indexcontorl/add')}"> 
+                      <input type="reset" class="sub-btn" value="重  置" />
+                    </a>
+                </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <script src="__PUBLIC__/admin/js/kindeditor-all-min.js"></script>
+    <script src="__PUBLIC__/admin/js/laydate.js"></script>
+    <script>
+       KindEditor.ready(function(K) {
+                 window.editor = K.create('#editor_id');
+         });
+    </script>

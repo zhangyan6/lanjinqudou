@@ -1,0 +1,133 @@
+<layout name='viewadmin' />
+
+	<div class="container">
+		<div class="public-nav">您当前的位置：<a href="{:U('Admin/index/index')}">管理首页</a>><a href="{:U('Admin/project/index')}">项目管理</a></div>
+		<div class="public-content">
+			
+        
+        <div class="search-wrap">
+            <div class="search-content">
+                <form action="/jscss/admin/design/index" method="post">
+                    <table class="search-tab">
+                        <tr>
+                            <th width="120">选择分类:</th>
+                            <td>
+                                <select name="search-sort" id="">
+                                    <option value="">全部</option>
+                                    <option value="19">祛痘项目</option>
+                                    <option value="20">祛印项目</option>
+                                    <option value="21">平疤项目</option>
+                                    <option value="22">修复项目</option>
+                        
+                                    <option value="23">护肤项目</option>
+                                    
+                                </select>
+                            </td>
+                            <th width="70">关键字:</th>
+                            <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
+                            <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
+                        </tr>
+                    </table>
+                    <div class="result-title">
+                    <div class="result-list">
+                        <a href="{:U('Admin/project/add')}" style="height: 24px; width: 80px;border: 1px solid #ccc;font-size: 12px;text-align:center;background:#fff;"><i class="icon-font"></i>添加项目</a>
+                        <a id="batchDel" href="javascript:void(0)" onclick="deleteallbutton()" style="height: 24px; width: 80px;border: 1px solid #ccc;background:#fff;font-size: 12px;text-align:center"><i class="icon-font"></i>
+                        批量删除</a>
+                        <p id="demo"></p>
+                        <script>
+                           function deleteallbutton(){
+                           var x;
+                           var r=confirm("你确定要批量删除吗？");
+                               if (r==true){
+                                 x="";
+                              }
+                                else{
+                                 x="已取消删除!";
+                              }
+                             document.getElementById("demo").innerHTML=x;
+                            }
+                       </script>
+                        <a id="updateOrd" href="javascript:void(0)" style="height: 24px; width: 80px;border: 1px solid #ccc;font-size: 12px;text-align:center;background:#fff;"><i class="icon-font"></i>更新排序</a>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="main-wrap">
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th>
+                            <th>排序</th>
+                            <th>ID</th>
+                            <th>项目名称</th>
+                            <th>项目宣传图</th>
+                            <th>主治介绍</th>
+                            <th>方案</th>
+                            <th>产品</th>
+                                                  
+                            <th>操作</th>
+                            
+                        </tr>
+                         <volist name="project" id="vo">
+                        <tr>
+                        <td class="tc"><input name="id[]" value="{$vo.id}" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="{$vo.id}" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="{$vo.id}" type="text">
+                            </td>
+
+                            <td>{$vo.id}</td>
+                            
+                            <td>{$vo.projectname}</td>
+                            <td>
+                                <img src="__PUBLIC__/{$vo.projectpicture}" width="100px" height="100px"/>
+                            </td>
+                            <td>{$vo.mainintroduce}</td>
+                            <td>{$vo.program}</td>
+                            <td>{$vo.product}</td>
+                            
+                            <td>
+                                <a class="link-update" href="{:U('Admin/project/edit')}/id/{$vo.id}">修改</a>
+                                <a class="link-del" href="{:U('Admin/project/destroy')}/id/{$vo.id}" onclick="deletebutton()">删除</a>
+<p id="demo"></p>
+<script>
+function deletebutton(){
+    var x;
+    var r=confirm("你确定要删除这条信息吗？");
+    if (r==true){
+        x="";
+    }
+    else{
+        x="已取消删除!";
+    }
+    document.getElementById("demo").innerHTML=x;
+}
+</script>
+                            </td>
+                        </tr>
+                        </volist>
+
+                        
+                        </table>
+                    <div class="page">
+                    <form action="" method="get">
+                    共<span>42</span>个站点
+                        <a href="">首页</a>
+                        <a href="">上一页</a>
+                        <a href="">下一页</a>
+                        第<span style="color:red;font-weight:600">12</span>页
+                        共<span style="color:red;font-weight:600">120</span>页
+                        <input type="text" class="page-input">
+                        <input type="submit" class="page-btn" value="跳转">
+                    </form>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+    </div>
+    

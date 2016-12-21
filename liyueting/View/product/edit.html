@@ -1,0 +1,69 @@
+<layout name='viewadmin' />
+<div class="container">
+		<div class="public-nav">您当前的位置：<a href="{:U('Admin/product/edit')}">产品修改</a></div>
+		<div class="public-content">
+			<div class="public-content-header">
+				<h3>添加产品</h3>
+			</div>
+			<div class="public-content-cont">
+			<form action="{:U('Admin/product/update')}" method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<label for="">请选择分类</label>
+					<select name="" class="form-select">
+					    <option value="">请选择分类</option>
+						<option value="">蓝金组合祛痘系列</option>
+						<option value="">中药祛痘系列</option>
+						<option value="">祛印平疤系列</option>
+						<option value="">修复系列</option>
+						<option value="">蓝金护肤系列</option>
+						<option value="">蓝色经典系列</option>
+						<option value="">焕颜修复系列</option>
+						<option value="">面膜系列</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="">产品ID</label>
+					<input class="form-input-txt" type="text" name="id" value="{$product.id}" />
+				</div>
+				<div class="form-group">
+					<label for="">产品名</label>
+					<input class="form-input-txt" type="text" name="productname" value="{$product.productname}" />
+				</div>
+				<div class="form-group">
+					<label for="">产品简介</label>
+					<textarea id="editor_id" name="productintroduce"  class="form-input-textara" style="width:700px;height:300px;">
+						{$product.productintroduce}
+					</textarea> 
+				</div>
+				<div class="form-group">
+					<label for="">产品图片</label>
+					<img src="__PUBLIC__/{$product.productpicture}" width="300px" height="50px"/>
+					<input type="file" name="productpicture">
+				</div>
+				<div class="form-group">
+					<label for="">产品所属项目</label>
+					<input class="form-input-txt" type="text" name="project" value="{$product.project}" />
+				</div>
+				
+				<div class="form-group">
+					<label for="">产品所属系列</label>
+					<input class="form-input-txt" type="text" name="series" value="{$product.series}" />
+				</div>
+				
+				
+				<div class="form-group" style="margin-left:150px;">
+					<input type="submit" onclick="tianjia()" class="sub-btn" value="提  交" />
+					
+					<input type="reset" class="sub-btn" value="重  置" />
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<script src="__PUBLIC__/admin/js/kindeditor-all-min.js"></script>
+<script src="__PUBLIC__/admin/js/laydate.js"></script>
+<script>
+	 KindEditor.ready(function(K) {
+                window.editor = K.create('#editor_id');
+        });
+</script>
