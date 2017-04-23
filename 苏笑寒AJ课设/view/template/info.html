@@ -1,0 +1,30 @@
+<div class="m_toper">
+    <div class="m1">
+        <div class="row">
+            <div class="col-sm-9">
+                <a href="" class="pull-left">
+                    <img ng-src="{{data.thumb}}" class="img-circle">
+                </a>
+                <div class="m2">
+                    <div>
+                        <p ng-bind="data.name"></p> <small ng-bind="data.city+'，'+data.province"></small>
+                    </div>
+                    <p class="btn btn-sm btn-rounded {{supportMes=='取消点赞'?'btn-danger':'btn-success'}}" ng-click="support();" ng-bind="supportMes"></p>
+                    <p class="btn btn-sm  btn-rounded {{followMes=='已关注'?'btn-danger':'btn-success'}}" ng-click="follow();" ng-bind="followMes"></p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="pull-right text-center zan">
+                    <a href="">
+                        <span class="h3" ng-bind="data.star"></span>
+                        <small> 点赞 </small>
+                    </a>&nbsp;
+                    <a href="">
+                        <span class="h3" ng-bind="data.fansnum"></span>
+                        <small> 粉丝</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

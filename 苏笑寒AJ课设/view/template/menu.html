@@ -1,0 +1,22 @@
+<div class="col-md-2 column bg ys2">
+    <!--头像-->
+    <div class="cen">
+        <img ng-src="{{data.thumb}}" class="img-circle">
+        <h5 ng-bind="data.name"></h5>
+        <h6 ng-bind="data.describe"></h6>
+    </div>
+    <!--导航栏-->
+    <ul class="nav">
+        <li class="ys1"></li>
+        <li class="ys1"><a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+        <li class="ys1" ui-sref="intro"><a href="#"><span class="glyphicon glyphicon-file"></span> 简介</a></li>
+        <li class="ys1" ui-sref="message"><a href="#"><span class="glyphicon glyphicon-envelope"></span> 信息</a></li>
+        <li class="ys1"><a href="#" ng-click="show();"><span class="glyphicon glyphicon-cog"></span> 操作</a>
+            <ul class="nav" ng-show="isShow">
+                <li><a href="#">设置栏目</a></li>
+                <li><a href="#">更多设置</a></li>
+                <li><a href="#">分割线</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>

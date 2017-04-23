@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8" />
+    <title>综合练习_首页</title>
+    <link href="css/vendor/bootstrap.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+
+<body ng-controller="mainCtrl">
+    <div class="animated fadeIn">
+        <div app-head data="currentUserData"></div>
+        <div class="container-fluid down">
+            <div class="row">
+                <!--左栏-->
+                <div app-menu is-show="isShow" data="currentUserData"></div>
+                <div class="col-md-10 column ys4">
+                    <div class="row">
+                        <!--中栏-->
+                        <div class="col-md-10 column ys3 h" style="padding:0px;margin:0px;">
+                            <!--中栏顶部-->
+                            <div app-info data="currentUserData"></div>
+                            <!--中栏底部-->
+                            <div app-tab data="tabs"></div>
+                            <div class="m_bottom">
+                                <div class="padder">
+                                    <div class="streamline b-l b-info m-l-lg m-b padder-v">
+                                        <div ui-view class="animated fadeIn"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div app-foot></div>
+                        </div>
+                        <!--右栏-->
+                        <div app-fans fanslist="fansData"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/vendor/jquery-1.12.4.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/vendor/angular-ui-router.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+<div class="col-md-2 column ys4 h text-center" style="padding:0px;margin:0px;">
+    <h4>我的粉丝</h4>
+    <ul>
+        <li ng-repeat="item in fanslist">
+            <a herf=""><img ng-src="{{item.thumb}}" class="img-circle"></a>
+            <div>
+                <div>
+                    <p ng-bind="item.name"></p>
+                </div>
+                <p ng-bind="item.job"></p>
+            </div>
+        </li>
+    </ul>
+</div>
